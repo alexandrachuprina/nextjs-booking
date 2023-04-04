@@ -8,15 +8,12 @@ interface Props {
 
 function Paragraph(props: Props) {
   return (
-      <>
+    <>
       <h2>{props.header}</h2>
       <p>{props.description}</p>
-      <a href="#">
-        <p>{props.link}</p>
-      </a>
-  </>
+      <p>{props.link}</p>
+    </>
   );
 }
 
 export default Paragraph;
-

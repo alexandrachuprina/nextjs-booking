@@ -9,9 +9,7 @@ import contacts03 from "../../assets/images/contacts03.png";
 import inst from "../../assets/icons/social/inst.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
-// import mastercard from "../../assets/icons/social/mastercard.svg";
-// import visa from "../../assets/icons/social/visa.svg";
-// import bank from "../../assets/icons/social/bank.svg";
+
 
 function Contacts() {
   return (
@@ -57,7 +55,9 @@ function Contacts() {
                     objectPosition: "60%",
                   }}
                 />
+    
               </div>
+              
             </div>
           </div>
         </Col>
