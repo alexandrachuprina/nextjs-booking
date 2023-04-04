@@ -1,0 +1,51 @@
+@import '../queries.scss';
+@import '../colors.scss';
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+.component {
+  height: 70vh;
+  width: 100vw;
+  position: relative;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  h2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+
+    @media (min-width: $xs) {
+      width: 260px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: $xs) {
+    margin: 50px 0 0 0;
+  }
+}
+.subheader {
+  p {
+    // font-style: thin;
+    font-weight: 400;
+    
+    @media (min-width: $xs) {
+      width: 260px;
+    }
+  }
+}
+.button {
+  margin-top: 20px;
+  display: inline-block;
+}
+.bt-header {
+  appearance: none;
+  background-color: $green;
+}

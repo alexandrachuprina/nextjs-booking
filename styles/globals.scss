@@ -1,0 +1,16 @@
+/* @import url("../node_modules/antd/dist/reset.css"); */
+@import url("../node_modules/antd/dist/reset.css");
+
+/* Components  */
+@import './components/Header.module.scss';
+
+/* Variables  */
+@import './queries.scss';
+
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
