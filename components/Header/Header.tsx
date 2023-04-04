@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
-import "../../styles/components/Header.module.scss";
+import styles from "../../styles/components/Header.module.scss";
 
 import header from "../../assets/images/header.png";
 
@@ -12,7 +12,7 @@ import Navbar from "../Navbar";
 
 function Header() {
   return (
-    <div className="component-header">
+    <div className={styles.component}>
       <Image
         src={header}
         alt="header"
@@ -27,17 +27,17 @@ function Header() {
 
       <Row justify={"center"} style={{height: '70vh'}}>
         <Col span={22}>
-            <div className="header">
+            <div className={styles.header}>
               <h2>Find peace in the Forest</h2>
-              <div className="subheader">
+              <div className={styles.subheader}>
                 <p>
                   Come and stay in out hut hotel near Mariager Fjord in Denmark
                 </p>
               </div>
             </div>
 
-            <div className="button">
-              <button className="bt-header">
+            <div className={styles.button}>
+              <button>
                 <p>Book now</p>
               </button>
             </div>

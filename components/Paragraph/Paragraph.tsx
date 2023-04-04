@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/components/Paragraph.module.scss";
 
 interface Props {
   header: string;

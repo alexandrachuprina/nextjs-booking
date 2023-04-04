@@ -1,16 +1,16 @@
 import React from "react";
 import { Row, Col } from "antd";
 import Paragraph from "../Paragraph/Paragraph";
-import '../../styles/components/Map.module.scss';
+import styles from '../../styles/components/Map.module.scss';
 
 function Map() {
   return (
-    <div className="component-map">
+    <div className={styles.component}>
       <Row justify={"center"}>
         <Col span={22}>
-          <div className="map">
+          <div className={styles.map}>
           </div>
-          <div className="paragraph-text">
+          <div className={styles.text}>
             <Paragraph
               header="The Forest"
               description="Løvtags three exclusive and comfortable cabins, Et, Ro 

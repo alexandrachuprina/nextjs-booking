@@ -1,10 +1,10 @@
 @import '../margins.scss';
 @import '../colors.scss';
 
-.component-map {
+.component {
   background-color: $lightgreen;
 }
-.paragraph-text {
+.text {
   display: flex;
   flex-direction: column;
   h2, 

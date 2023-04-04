@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
-import "../../styles/components/Main.module.scss";
+import styles from "../../styles/components/Main.module.scss";
 import Paragraph from "../Paragraph/Paragraph";
 
 import main01 from "../../assets/images/main01.png";
@@ -13,12 +13,12 @@ import main04 from "../../assets/images/main04.png";
 
 function Main() {
   return (
-    <div className="component-main">
+    <div className={styles.component}>
       <Row justify={"center"}>
         <Col span={22}>
-          <div className="main">
-            <div className="paragraph">
-              <div className="paragraph-text">
+          <div className={styles.main}>
+            <div className={styles.paragraph}>
+              <div className={styles.text}>
                 <Paragraph
                   header="The Cabins"
                   description="Løvtags three exclusive and comfortable cabins, Et, Ro 
@@ -30,7 +30,7 @@ function Main() {
                   link="Read more"
                 />
               </div>
-              <div className="pharagraph-image">
+              <div className={styles.image}>
                 <Image
                   src={main01}
                   alt={"main01"}
@@ -43,8 +43,8 @@ function Main() {
                 />
               </div>
             </div>
-            <div className="photos">
-              <div className="image">
+            <div className={styles.photos}>
+              <div className={styles.photo}>
                 <Image
                   src={main02}
                   alt={"main02"}
@@ -55,7 +55,7 @@ function Main() {
                   }}
                 />
               </div>
-              <div className="image">
+              <div className={styles.photo}>
                 <Image
                   src={main03}
                   alt={"main03"}
@@ -66,7 +66,7 @@ function Main() {
                   }}
                 />
               </div>
-              <div className="image">
+              <div className={styles.photo}>
                 <Image
                   src={main04}
                   alt={"main04"}
