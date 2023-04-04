@@ -1,0 +1,13 @@
+@import '../queries.scss';
+@import '../colors.scss';
+@import '../margins.scss';
+
+.text {
+  display: flex;
+  flex-direction: column;
+  h2, 
+  p {
+    margin-bottom: 10px;
+  }
+  background-color: red;
+}

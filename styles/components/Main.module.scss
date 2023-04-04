@@ -10,18 +10,17 @@
   }
   margin-top: $margin-main-xs;
 }
+.paragraph-text {
+  display: flex;
+  flex-direction: column;
+  h2, 
+  p {
+    margin-bottom: 10px;
+  }
+}
 .paragraph {
   display: flex;
   flex-direction: column;
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    h2, 
-    p {
-      margin-bottom: 10px;
-    }
-  }
 }
 .photos {
   display: flex;
@@ -29,7 +28,7 @@
   width: 100%;
   margin-bottom: $margin-main-xs;
 }
-.image-pharagraph {
+.pharagraph-image {
   position: relative;
 
   @media (min-width: $xs) {
