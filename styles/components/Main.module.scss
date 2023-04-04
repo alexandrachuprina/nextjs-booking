@@ -1,0 +1,49 @@
+@import '../queries.scss';
+@import '../colors.scss';
+@import '../margins.scss';
+
+.component-main {
+  h1,
+  h2,
+  p {
+    color: black;
+  }
+  margin-top: $margin-main-xs;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    h2, 
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+.photos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: $margin-main-xs;
+}
+.image-pharagraph {
+  position: relative;
+
+  @media (min-width: $xs) {
+    height: 290px;
+    width: 290px;
+    margin-bottom: 10px;
+  }
+}
+.image {
+  position: relative;
+  
+  @media (min-width: $xs) {
+    height: 290px;
+    width: 290px;
+    margin: 10px 0 10px 0;
+  }
+}

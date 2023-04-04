@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
-import styles from "../../styles/Header.module.css";
+import "../../styles/components/Header.module.scss";
 
 import header from "../../assets/images/header.png";
 
@@ -12,7 +12,7 @@ import Navbar from "../Navbar";
 
 function Header() {
   return (
-    <div className="component">
+    <div className="component-header">
       <Image
         src={header}
         alt="header"
