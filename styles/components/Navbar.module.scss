@@ -1,0 +1,37 @@
+@import '../queries.scss';
+@import '../colors.scss';
+@import '../margins.scss';
+
+.componentphone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: $margin-top-xs 0;
+}
+.logo {
+  position: relative;
+  width: 80px;
+  height: 60px;
+}
+.navphone {
+  p {
+    text-transform: uppercase;
+    padding-bottom: $margin-bottom-h2-xs;
+  }
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: $margin-top-xs 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  p {
+    text-transform: uppercase;
+    padding: $margin-bottom-h2-xs $margin-bottom-h2-xs 0 $margin-bottom-h2-xs;
+  }
+}
