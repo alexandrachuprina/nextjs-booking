@@ -10,7 +10,6 @@ import inst from "../../assets/icons/social/inst.svg";
 import facebook from "../../assets/icons/social/facebook.svg";
 import twitter from "../../assets/icons/social/twitter.svg";
 
-
 function Contacts() {
   return (
     <div className={styles.component}>
@@ -55,9 +54,7 @@ function Contacts() {
                     objectPosition: "60%",
                   }}
                 />
-    
               </div>
-              
             </div>
           </div>
         </Col>

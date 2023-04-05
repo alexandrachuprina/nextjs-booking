@@ -25,22 +25,22 @@ function Header() {
         }}
       />
 
-      <Row justify={"center"} style={{height: '70vh'}}>
+      <Row justify={"center"} style={{ height: "70vh" }}>
         <Col span={22}>
-            <div className={styles.header}>
-              <h2>Find peace in the Forest</h2>
-              <div className={styles.subheader}>
-                <p>
-                  Come and stay in out hut hotel near Mariager Fjord in Denmark
-                </p>
-              </div>
+          <div className={styles.header}>
+            <h2>Find peace in the Forest</h2>
+            <div className={styles.subheader}>
+              <p>
+                Come and stay in out hut hotel near Mariager Fjord in Denmark
+              </p>
             </div>
+          </div>
 
-            <div className={styles.button}>
-              <button>
-                <p>Book now</p>
-              </button>
-            </div>
+          <div className={styles.button}>
+            <button>
+              <p>Book now</p>
+            </button>
+          </div>
         </Col>
       </Row>
     </div>

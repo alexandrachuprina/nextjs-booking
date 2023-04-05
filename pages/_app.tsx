@@ -1,7 +1,7 @@
-import '@/styles/globals.scss'
+import "@/styles/globals.scss";
 
-import type { AppProps } from 'next/app'
-import { Open_Sans } from 'next/font/google'
+import type { AppProps } from "next/app";
+import { Open_Sans } from "next/font/google";
 
 const opensans = Open_Sans({ subsets: ["latin"] });
 

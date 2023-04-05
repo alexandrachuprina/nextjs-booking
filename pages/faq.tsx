@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function faq() {
-  return (
-    <div>faq</div>
-  )
+  return <div>faq</div>;
 }
 
-export default faq
+export default faq;

@@ -1,15 +1,14 @@
 import React from "react";
 import { Row, Col } from "antd";
 import Paragraph from "../Paragraph/Paragraph";
-import styles from '../../styles/components/Map.module.scss';
+import styles from "../../styles/components/Map.module.scss";
 
 function Map() {
   return (
     <div className={styles.component}>
       <Row justify={"center"}>
         <Col span={22}>
-          <div className={styles.map}>
-          </div>
+          <div className={styles.map}></div>
           <div className={styles.text}>
             <Paragraph
               header="The Forest"

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function booking() {
-  return (
-    <div>booking</div>
-  )
+  return <div>booking</div>;
 }
 
-export default booking
+export default booking;

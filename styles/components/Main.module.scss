@@ -1,6 +1,6 @@
-@import '../queries.scss';
-@import '../colors.scss';
-@import '../margins.scss';
+@import "../queries.scss";
+@import "../colors.scss";
+@import "../margins.scss";
 
 .component {
   h1,
@@ -13,7 +13,7 @@
 .text {
   display: flex;
   flex-direction: column;
-  h2, 
+  h2,
   p {
     margin-bottom: $margin-bottom-h2-xs;
   }
@@ -39,7 +39,7 @@
 }
 .photo {
   position: relative;
-  
+
   @media (min-width: $xs) {
     height: 290px;
     width: 290px;
