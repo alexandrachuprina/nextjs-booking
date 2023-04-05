@@ -19,6 +19,12 @@
     padding-bottom: $margin-bottom-h2-xs;
   }
 }
+.smalllogo {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-bottom: $margin-bottom-h2-xs;
+}
 
 .component {
   display: flex;

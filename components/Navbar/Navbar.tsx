@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "../../styles/components/Navbar.module.scss";
 
 import logo from "../../assets/icons/logo.svg";
+import denmark from '../../assets/icons/denmark.svg';
 
 function Navbar() {
   const [phone, setPhone] = useState<any>();
@@ -49,7 +50,7 @@ function Navbar() {
                 <Link href="/">
                   <p>Home</p>
                 </Link>
-                <Link href="/hunt">
+                <Link href="/hut">
                   <p>the hut</p>
                 </Link>
                 <Link href="/area">
@@ -64,6 +65,9 @@ function Navbar() {
                 <Link href="/faq">
                   <p>faq</p>
                 </Link>
+              </div>
+              <div className={styles.smalllogo}>
+                <Image src={denmark} alt="logo" fill={true} />
               </div>
               <button>book now</button>
             </Drawer>
@@ -82,7 +86,7 @@ function Navbar() {
                   <Link href="/">
                     <p>Home</p>
                   </Link>
-                  <Link href="/hunt">
+                  <Link href="/hut">
                     <p>the hut</p>
                   </Link>
                   <Link href="/area">

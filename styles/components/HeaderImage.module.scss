@@ -1,0 +1,16 @@
+.component {
+  position: relative;
+  min-width: 320px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 150px;
+  h2 {
+    font-size: 40px;
+    color: white;
+  }
+}
