@@ -1,0 +1,15 @@
+@import '../margins.scss';
+
+.component {
+  display: flex;
+  flex-direction: column;
+  margin: $margin-top-xs 0;
+  h1 {
+    margin-bottom: $margin-top-xs;
+  }
+}
+.image {
+  position: relative;
+  width: 290px;
+  height: 300px;
+}
