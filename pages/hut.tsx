@@ -8,6 +8,7 @@ import hut01 from "../assets/images/hut01.png";
 import hut02 from "../assets/images/hut02.png";
 import hut03 from "../assets/images/hut03.png";
 import hut04 from "../assets/images/hut04.png";
+import TextSlider from "@/components/ParagraphSlider/TextSlider";
 
 // To create slider component
 // and for text
@@ -20,7 +21,8 @@ function hut() {
         // @ts-ignore
         image={hut01}
       />
-      <Slider/>
+      {/* <Slider/>
+      <TextSlider/> */}
       <ParagraphSlider
         header="The Outside"
         description="Løvtag’s three exclusive and comfortable cabins, Et, 

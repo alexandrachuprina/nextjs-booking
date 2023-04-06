@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import styles from "../../styles/components/Footer.module.scss";
+import input from '../../styles/components/inputs/FooterInput.module.scss'
 
 import paypal from "../../assets/icons/social/paypal.svg";
 import mastercard from "../../assets/icons/social/mastercard.svg";
@@ -16,7 +17,7 @@ function Footer() {
           <div className={styles.footer}>
             <div className={styles.newsletter}>
               <h2>Newsletter</h2>
-              <input type="text" />
+              <input className={input.component} type="text" />
               <p>
                 Sign up to our newsletter for special things and receive 10% off
                 your next order.

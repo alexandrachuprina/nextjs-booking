@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
 import styles from "../../styles/components/Header.module.scss";
+import button from  '../../styles/components/buttons/BookingButton.module.scss';
 import header from "../../assets/images/header.png";
 
 import Navbar from "../Navbar";
@@ -36,7 +37,7 @@ function Header() {
             </div>
 
             <div className={styles.button}>
-              <button>
+              <button className={button.component}>
                 <p>Book now</p>
               </button>
             </div>

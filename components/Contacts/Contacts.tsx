@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import styles from "../../styles/components/Contacts.module.scss";
+import button from  '../../styles/components/buttons/BookingButton.module.scss';
 
 import contacts01 from "../../assets/images/contacts01.png";
 import contacts02 from "../../assets/images/contacts02.png";
@@ -55,6 +56,9 @@ function Contacts() {
                   }}
                 />
               </div>
+              <button className={button.long}>
+                <p>Book now</p>
+              </button>
             </div>
           </div>
         </Col>
