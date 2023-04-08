@@ -15,7 +15,6 @@ import GallerySmall from "@/components/GallerySmall";
 import contacts01 from "../assets/images/contacts01.png";
 import contacts02 from "../assets/images/contacts02.png";
 
-
 export default function Home() {
   return (
     <>
@@ -23,7 +22,7 @@ export default function Home() {
       <Main />
       <Map />
       <Facilities />
-      <GallerySmall links={[contacts01, contacts02]}/>
+      <GallerySmall links={[contacts01, contacts02]} />
       <HeaderContacts header="Stay in touch with us" />
       <Contacts />
     </>

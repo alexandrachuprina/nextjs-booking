@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 import styles from "../../styles/components/TextSlider.module.scss";
 
 interface data {
-  id: number,
+  id: number;
   header: string;
   link: string;
   description: string;

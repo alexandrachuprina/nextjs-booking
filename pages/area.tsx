@@ -35,21 +35,19 @@ function area() {
             id: 0,
             header: "The outside",
             link: "Hot tube",
-            description:
-              `Løvtags three exclusive and comfortable cabins, Et, Ro and Ly, 
+            description: `Løvtags three exclusive and comfortable cabins, Et, Ro and Ly, 
               are designed by architect Sigurd Larsen. They all have an open 
               space with a double bed, a double sofa bed, kitchen, separate 
               toilet and an outdoor shower. On the roof, surrounded by treetops, 
-              there is a terrace, which is about nine meters above ground.`
+              there is a terrace, which is about nine meters above ground.`,
           },
           {
             id: 1,
             header: "The outside",
             link: "Electric car change",
-            description:
-              `Løvtags three exclusive and comfortable cabins, Et, Ro and Ly, 
+            description: `Løvtags three exclusive and comfortable cabins, Et, Ro and Ly, 
               are designed by architect Sigurd Larsen. They all have an open 
-              space with a double bed, a double sofa bed.`
+              space with a double bed, a double sofa bed.`,
           },
         ]}
       />

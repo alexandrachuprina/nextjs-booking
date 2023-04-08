@@ -20,7 +20,7 @@ function HeaderImage(props: Props) {
           objectPosition: "60%",
         }}
       />
-      <Row justify={'center'}>
+      <Row justify={"center"}>
         <Col span={22}>
           <div className={styles.header}>
             <h2>{props.header}</h2>

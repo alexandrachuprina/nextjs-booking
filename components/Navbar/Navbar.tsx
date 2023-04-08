@@ -4,10 +4,10 @@ import { MenuOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/components/Navbar.module.scss";
-import button from '../../styles/components/buttons/MenuButton.module.scss';
+import button from "../../styles/components/buttons/MenuButton.module.scss";
 
 import logo from "../../assets/icons/logo.svg";
-import denmark from '../../assets/icons/denmark.svg';
+import denmark from "../../assets/icons/denmark.svg";
 
 function Navbar() {
   const [phone, setPhone] = useState<any>();
@@ -39,7 +39,9 @@ function Navbar() {
               <div className={styles.logo}>
                 <Image src={logo} alt="logo" fill={true} />
               </div>
-              <button className={button.component} onClick={showDrawer}><MenuOutlined style={{color: "white"}}/></button>
+              <button className={button.component} onClick={showDrawer}>
+                <MenuOutlined style={{ color: "white" }} />
+              </button>
             </div>
             <Drawer
               title="Menu"
@@ -71,7 +73,6 @@ function Navbar() {
               <div className={styles.smalllogo}>
                 <Image src={denmark} alt="logo" fill={true} />
               </div>
-            
             </Drawer>
           </Col>
         </Row>

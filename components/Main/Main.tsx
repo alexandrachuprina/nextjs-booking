@@ -27,8 +27,7 @@ function Main() {
         reverse={false}
         image={main01}
       />
-      <GalleryRow
-      links={[main02, main03, main04]}/>
+      <GalleryRow links={[main02, main03, main04]} />
     </>
   );
 }
