@@ -2,6 +2,11 @@
 @import "../colors.scss";
 @import "../margins.scss";
 
+.component {
+  display: flex;
+  flex-direction: column;
+  margin-top: $margin-top-xs;
+}
 .text {
   display: flex;
   flex-direction: column;
@@ -9,5 +14,10 @@
   p {
     margin-bottom: 10px;
   }
-  background-color: red;
+  margin-top: $margin-top-xs;
+}
+.photo {
+  position: relative;
+  width: 290px;
+  height: 290px;
 }

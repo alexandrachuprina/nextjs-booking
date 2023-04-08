@@ -6,10 +6,7 @@ import styles from "../../styles/components/Map.module.scss";
 function Map() {
   return (
     <div className={styles.component}>
-      <Row justify={"center"}>
-        <Col span={22}>
           <div className={styles.map}></div>
-          <div className={styles.text}>
             <Paragraph
               header="The Forest"
               description="Løvtags three exclusive and comfortable cabins, Et, Ro 
@@ -19,10 +16,8 @@ function Map() {
               which is about nine meters above ground. The cottages are built around tall, 
               old trees that go through the entire cottage from floor to ceiling."
               link="Read more"
+              reverse={false}
             />
-          </div>
-        </Col>
-      </Row>
     </div>
   );
 }
