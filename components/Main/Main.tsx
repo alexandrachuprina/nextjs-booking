@@ -8,6 +8,7 @@ import main01 from "../../assets/images/main01.png";
 import main02 from "../../assets/images/main02.png";
 import main03 from "../../assets/images/main03.png";
 import main04 from "../../assets/images/main04.png";
+import GalleryRow from "../GalleryRow";
 
 // Format scss
 
@@ -27,41 +28,8 @@ function Main() {
         // @ts-ignore
         image={main01}
       />
-      {/* <div className={styles.photos}>
-        <div className={styles.photo}>
-          <Image
-            src={main02}
-            alt={"main02"}
-            fill={true}
-            style={{
-              objectFit: "cover",
-              objectPosition: "60%",
-            }}
-          />
-        </div>
-        <div className={styles.photo}>
-          <Image
-            src={main03}
-            alt={"main03"}
-            fill={true}
-            style={{
-              objectFit: "cover",
-              objectPosition: "60%",
-            }}
-          />
-        </div>
-        <div className={styles.photo}>
-          <Image
-            src={main04}
-            alt={"main04"}
-            fill={true}
-            style={{
-              objectFit: "cover",
-              objectPosition: "60%",
-            }}
-          />
-        </div>
-      </div> */}
+      <GalleryRow
+      links={[main02, main03, main04]}/>
     </>
   );
 }

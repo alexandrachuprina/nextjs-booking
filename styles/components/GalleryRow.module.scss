@@ -2,3 +2,14 @@
 @import "../colors.scss";
 @import "../margins.scss";
 
+.component {
+  display: flex;
+  flex-direction: column;
+  margin: $margin-top-xs 0;
+}
+.image {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin-bottom: $margin-top-xs;
+}
