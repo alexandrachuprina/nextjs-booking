@@ -1,3 +1,44 @@
 @import "../queries.scss";
 @import "../colors.scss";
 @import "../margins.scss";
+
+.component {
+  margin-top: $margin-top-xs;
+  display: grid;
+}
+.image01 {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin-bottom: $margin-top-xs;
+}
+.image02 {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin-bottom: $margin-top-xs;
+}
+.image03 {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin-bottom: $margin-top-xs;
+}
+.image04 {
+  width: 290px;
+  height: 290px;
+  background-color: $lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: $margin-top-xs;
+}
+.image05 {
+  position: relative;
+  width: 290px;
+  height: 290px;
+  margin-bottom: $margin-top-xs;
+}

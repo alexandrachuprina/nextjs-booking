@@ -1,13 +1,14 @@
 import React from "react";
 import { Row, Col } from "antd";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 import styles from "../../styles/components/Paragraph.module.scss";
 
 interface Props {
   header: string;
   description: string;
   link?: string;
-  image?: string;
+  image?: StaticImageData;
   reverse: boolean;
 }
 
@@ -20,7 +21,6 @@ function Paragraph(props: Props) {
             <>
               {props.image ? (
                 <div className={styles.photo}>
-                  {/* @ts-ignore */}
                   <Image src={props.image} alt={props.header} fill={true} />
                 </div>
               ) : null}
@@ -39,7 +39,6 @@ function Paragraph(props: Props) {
               </div>
               {props.image ? (
                 <div className={styles.photo}>
-                  {/* @ts-ignore */}
                   <Image src={props.image} alt={props.header} fill={true} />
                 </div>
               ) : null}

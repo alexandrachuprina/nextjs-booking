@@ -2,17 +2,21 @@ import React from "react";
 import HeaderImage from "@/components/HeaderImage/HeaderImage";
 import Quote from "@/components/Quote";
 import Paragraph from "@/components/Paragraph/Paragraph";
+import GalleryGrid from "@/components/GalleryGrid";
 
 import about01 from "../assets/images/about01.png";
 import about02 from "../assets/images/about02.png";
-import GalleryGrid from "@/components/GalleryGrid";
+import about03 from "../assets/images/about03.png";
+import about04 from "../assets/images/about04.png";
+import about05 from "../assets/images/about05.png";
+import about06 from "../assets/images/about06.png";
+import HeaderContacts from "@/components/HeaderContacts";
 
 function about() {
   return (
     <>
       {/* @ts-ignore */}
       <HeaderImage header="About us" image={about01} />
-
       <Paragraph
         header="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
       tempor incididunt ut labore et dolore magna aliqua."
@@ -22,13 +26,18 @@ function about() {
       ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
       magni dolores eos qui ratione voluptatem sequi nesciunt. "
         reverse={true}
-        // @ts-ignore
         image={about02}
       />
       <Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing..." />
       <GalleryGrid
-      image01="d"
-      image02="d"/>
+        image01={about03}
+        image02={about04}
+        image03={about05}
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        image05={about06}
+      />
+      <HeaderContacts header="Stay in touch with us" />
     </>
   );
 }

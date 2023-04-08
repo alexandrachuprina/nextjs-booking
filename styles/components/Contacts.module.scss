@@ -2,6 +2,9 @@
 @import "../colors.scss";
 @import "../margins.scss";
 
+.component {
+  margin: $margin-bottom-h2-xs 0;
+}
 .photos {
   display: flex;
   flex-direction: column;
@@ -13,7 +16,6 @@
   min-height: 320px;
 }
 .contacts {
-  margin: $margin-top-xs 0;
   display: flex;
   flex-direction: column;
 }

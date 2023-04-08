@@ -1,22 +1,38 @@
 import React from 'react';
+import Image from 'next/image';
+import { StaticImageData } from "next/image";
 import { Row, Col } from 'antd';
 import styles from '../../styles/components/GalleryGrid.module.scss';
 
 interface Props {
-  image01?: string,
-  image02?: string,
-  image03?: string,
-  image04?: string,
+  image01: StaticImageData,
+  image02: StaticImageData,
+  image03: StaticImageData,
+  text: string,
+  image05: StaticImageData,
 }
 
 function GalleryGrid(props: Props) {
-  console.log("props")
-  console.log(props)
+
   return (
     <Row justify={'center'}>
       <Col span={22}>
         <div className={styles.component}>
-
+            <div className={styles.image01}>
+              <Image src={props.image01} alt={`image`} fill={true}/>
+            </div>
+            <div className={styles.image02}>
+              <Image src={props.image02} alt={`image`} fill={true}/>
+            </div>
+            <div className={styles.image03}>
+              <Image src={props.image03} alt={`image`} fill={true}/>
+            </div>
+            <div className={styles.image04}>
+              <p>{props.text}</p>
+            </div>
+            <div className={styles.image05}>
+              <Image src={props.image05} alt={`image`} fill={true}/>
+            </div>
         </div>
       </Col>
     </Row>

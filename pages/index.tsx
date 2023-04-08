@@ -9,17 +9,23 @@ import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Layout from "@/components/Layout";
+import HeaderContacts from "@/components/HeaderContacts";
+import GallerySmall from "@/components/GallerySmall";
 
-const inter = Inter({ subsets: ["latin"] });
+import contacts01 from "../assets/images/contacts01.png";
+import contacts02 from "../assets/images/contacts02.png";
+
 
 export default function Home() {
   return (
     <>
-        <Header />
-        <Main />
-        <Map />
-        <Facilities />
-        <Contacts />
+      <Header />
+      <Main />
+      <Map />
+      <Facilities />
+      <GallerySmall links={[contacts01, contacts02]}/>
+      <HeaderContacts header="Stay in touch with us" />
+      <Contacts />
     </>
   );
 }

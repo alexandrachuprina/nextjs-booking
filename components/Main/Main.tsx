@@ -25,7 +25,6 @@ function Main() {
               old trees that go through the entire cottage from floor to ceiling."
         link="Read more"
         reverse={false}
-        // @ts-ignore
         image={main01}
       />
       <GalleryRow
