@@ -4,6 +4,9 @@ import { Row, Col } from "antd";
 import styles from "../../styles/components/Carousel.module.scss";
 import { StaticImageData } from "next/image";
 
+import arrowLeft from '../../assets/icons/arrowLeft.svg';
+import arrowRight from '../../assets/icons/arrowRight.svg';
+
 interface data {
   image: StaticImageData;
 }
@@ -36,21 +39,25 @@ function Carousel(props: Props) {
       <Col span={22}>
         <div className={styles.component}>
           <div className={styles.image}>
-            <Image
-              src={props.data[index].image}
-              alt='image'
-              fill={true}
-            />
+            <Image src={props.data[index].image} alt="image" fill={true} />
           </div>
-          <button onClick={handleClickNext}>
-            <p>Next</p>
-          </button>
-          <button onClick={handleClickPrev}>
-            <p>Prev</p>
-          </button>
-          <p>
-            {index + 1} of {props.data.length}
-          </p>
+          <div className={styles.navigation}>
+
+            <div className={styles.arrows}>
+              <div className={styles.arrow} onClick={handleClickPrev}>
+                 <Image src={arrowLeft} alt='arrow' fill={true}/>
+              </div>
+              <div className={styles.arrow} onClick={handleClickNext}>
+              <Image src={arrowRight} alt='arrow' fill={true}/>
+              </div>
+            </div>
+
+            <p>
+              0{index + 1} —— 0{props.data.length}
+            </p>
+
+
+          </div>
         </div>
       </Col>
     </Row>

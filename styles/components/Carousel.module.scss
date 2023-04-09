@@ -1,3 +1,5 @@
+@import '../margins.scss';
+
 .component {
   display: flex;
   flex-direction: column;
@@ -6,4 +8,24 @@
   position: relative;
   width: 290px;
   height: 290px;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: $margin-top-xs;
+
+  p {
+    font-size: 10px;
+  }
+}
+.arrows {
+  display: flex;
+  flex-direction: row;
+}
+.arrow {
+  position: relative;
+  height: 10px;
+  width: 20px;
+  margin-right: 10px;
 }

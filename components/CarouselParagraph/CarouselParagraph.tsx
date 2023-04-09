@@ -18,4 +18,4 @@ function CarouselParagraph(props: children) {
   )
 }
 
-export default CarouselParagraph
+export default CarouselParagraph;
