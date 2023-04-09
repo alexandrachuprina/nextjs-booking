@@ -5,7 +5,6 @@ import styles from "../../styles/components/Carousel.module.scss";
 import { StaticImageData } from "next/image";
 
 interface data {
-  name: string;
   image: StaticImageData;
 }
 
@@ -39,7 +38,7 @@ function Carousel(props: Props) {
           <div className={styles.image}>
             <Image
               src={props.data[index].image}
-              alt={props.data[index].name}
+              alt='image'
               fill={true}
             />
           </div>

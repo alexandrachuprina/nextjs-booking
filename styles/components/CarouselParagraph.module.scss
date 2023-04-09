@@ -1,0 +1,7 @@
+@import '../margins.scss';
+
+.component {
+  display: flex;
+  flex-direction: column;
+  margin-top: $margin-top-xs;
+}
