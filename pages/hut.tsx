@@ -2,8 +2,6 @@ import React from "react";
 import HeaderImage from "@/components/HeaderImage/HeaderImage";
 import ParagraphSlider from "@/components/ParagraphSlider/ParagraphSlider";
 
-import Slider from "@/components/ParagraphSlider/Slider";
-
 import hut01 from "../assets/images/hut01.png";
 import hut02 from "../assets/images/hut02.png";
 import hut03 from "../assets/images/hut03.png";

@@ -1,3 +1,5 @@
+@import '../margins.scss';
+
 .component {
   position: relative;
   min-width: 320px;
@@ -8,9 +10,27 @@
   align-items: center;
 }
 .header {
-  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     font-size: 40px;
     color: white;
   }
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  p {
+    color: white;
+  }
+  margin: $margin-bottom-h2-xs 0;
+}
+.icon {
+  position: relative;
+  height: 20px;
+  width: 10px;
+  margin-right: 10px;
 }

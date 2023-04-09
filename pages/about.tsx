@@ -16,7 +16,7 @@ function about() {
   return (
     <>
       {/* @ts-ignore */}
-      <HeaderImage header="About us" image={about01} />
+      <HeaderImage header="About us" image={about01} button={['contact us', 'read faq']}/>
       <Paragraph
         header="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
       tempor incididunt ut labore et dolore magna aliqua."
