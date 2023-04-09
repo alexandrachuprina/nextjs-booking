@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Row, Col } from "antd";
-import styles from "../../styles/components/TextSlider.module.scss";
+import styles from "../../styles/components/CarouselText.module.scss";
 
 interface data {
   id: number;
@@ -25,17 +25,17 @@ function CarouselText(props: Props) {
       <Col span={22}>
         <div className={styles.component}>
           <h2>{props.data[0].header}</h2>
-          <div className={styles.headers}>
+          <div className={styles.links}>
             {props.data.map((elem: any, i: number) => {
               if (elem.id === index) {
                 return (
-                  <div className={styles.red} key={i}>
+                  <div className={styles.underlined} key={i}>
                     <p onClick={() => handleClick(elem.id)}>{elem.link}</p>
                   </div>
                 );
               } else {
                 return (
-                  <div className={styles.null} key={i}>
+                  <div key={i}>
                     <p onClick={() => handleClick(elem.id)}>{elem.link}</p>
                   </div>
                 );

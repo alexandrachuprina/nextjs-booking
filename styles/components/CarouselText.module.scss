@@ -1,4 +1,23 @@
+@import '../margins.scss';
+
 .component {
   display: flex;
   flex-direction: column;
+  margin-top: $margin-top-xs;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: $margin-bottom-h2-xs 0;
+  p {
+    margin-right: $margin-bottom-h2-xs;
+  }
+}
+.underlined {
+  p {
+    text-decoration: underline;
+  }
+}
+.description {
+  height: 150px;
 }
