@@ -12,10 +12,10 @@ function faq() {
           Cancellation two weeks prior = 50% refund
           Cancellation later than two weeks = full payment`,
           },
-          { question: "THE WALK UP TO GLASS HUT", answer: "" },
-          { question: "CAPACITY", answer: "" },
-          { question: "PETS", answer: "" },
-          { question: "CHECK-IN / CHECK-OUT", answer: "" },
+          { question: "THE WALK UP TO GLASS HUT", answer: "Cancellation later than two weeks = full payment`" },
+          { question: "CAPACITY", answer: "Cancellation later than two weeks = full payment`" },
+          { question: "PETS", answer: "Cancellation later than two weeks = full payment`" },
+          { question: "CHECK-IN / CHECK-OUT", answer: "Cancellation later than two weeks = full payment`" },
         ]}
       />
     </>
