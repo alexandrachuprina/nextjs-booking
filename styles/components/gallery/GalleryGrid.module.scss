@@ -5,26 +5,41 @@
 .component {
   margin-top: $margin-top-xs;
   display: grid;
+
+  // @media (min-width: $xs) {
+  //   grid-template-columns: 100%;
+  //   grid-template-rows: 290px 100px ;
+  //   grid-area: 
+  //   '01'
+  //   '02'
+  //   '03'
+  //   '04'
+  //   '05';
+  // }
 }
 .image01 {
+  grid-area: '01';
   position: relative;
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
 }
 .image02 {
+  grid-area: '02';
   position: relative;
   width: 290px;
-  height: 290px;
+  height: 100px;
   margin-bottom: $margin-top-xs;
 }
 .image03 {
+  grid-area: '03';
   position: relative;
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
 }
 .image04 {
+  grid-area: '04';
   width: 290px;
   height: 290px;
   background-color: $lightgreen;
@@ -37,6 +52,7 @@
   margin-bottom: $margin-top-xs;
 }
 .image05 {
+  grid-area: '05';
   position: relative;
   width: 290px;
   height: 290px;

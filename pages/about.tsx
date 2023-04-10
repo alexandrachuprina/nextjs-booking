@@ -11,6 +11,8 @@ import about04 from "../assets/images/about04.png";
 import about05 from "../assets/images/about05.png";
 import about06 from "../assets/images/about06.png";
 import HeaderContacts from "@/components/HeaderContacts";
+import Contacts from "@/components/Contacts";
+import ContactsForm from "@/components/Contacts/ContactsForm";
 
 function about() {
   return (
@@ -38,6 +40,8 @@ function about() {
         image05={about06}
       />
       <HeaderContacts header="Stay in touch with us" />
+      <Contacts/>
+      <ContactsForm/>
     </>
   );
 }
