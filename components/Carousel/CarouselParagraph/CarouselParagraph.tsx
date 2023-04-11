@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import styles from '../../../styles/components/Facilities.module.scss';
+import styles from '../../../styles/components/Carousel/CarouselParagraph.module.scss';
 
 
 interface children {

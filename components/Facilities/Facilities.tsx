@@ -11,10 +11,10 @@ import parking from "../../assets/icons/facilities/park.svg";
 import trees from "../../assets/icons/facilities/trees.svg";
 import temperature from "../../assets/icons/facilities/temperature.svg";
 import plug from "../../assets/icons/facilities/plug.svg";
-import wifi from "../../../assets/icons/facilities/wifi.svg";
-import shower from "../../../assets/icons/facilities/shower.svg";
-import toilet from "../../../assets/icons/facilities/toilet.svg";
-import towels from "../../../assets/icons/facilities/towels.svg";
+import wifi from "../../assets/icons/facilities/wifi.svg";
+import shower from "../../assets/icons/facilities/shower.svg";
+import toilet from "../../assets/icons/facilities/toilet.svg";
+import towels from "../../assets/icons/facilities/towels.svg";
 
 
 function Facilities() {
@@ -84,7 +84,39 @@ function Facilities() {
                 <Image src={plug} alt={"Mini-fridge"} fill={true} />
               </div>
               <div className={styles.text}>
-                <p>Plugs</p>
+                <p>230V</p>
+              </div>
+            </div>
+            <div className={styles.facility}>
+              <div className={styles.image}>
+                <Image src={wifi} alt={"Mini-fridge"} fill={true} />
+              </div>
+              <div className={styles.text}>
+                <p>wi-fi</p>
+              </div>
+            </div>
+            <div className={styles.facility}>
+              <div className={styles.image}>
+                <Image src={shower} alt={"Mini-fridge"} fill={true} />
+              </div>
+              <div className={styles.text}>
+                <p>shower</p>
+              </div>
+            </div>
+            <div className={styles.facility}>
+              <div className={styles.image}>
+                <Image src={toilet} alt={"Mini-fridge"} fill={true} />
+              </div>
+              <div className={styles.text}>
+                <p>toilet</p>
+              </div>
+            </div>
+            <div className={styles.facility}>
+              <div className={styles.image}>
+                <Image src={towels} alt={"Mini-fridge"} fill={true} />
+              </div>
+              <div className={styles.text}>
+                <p>towels</p>
               </div>
             </div>
           </div>

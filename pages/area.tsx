@@ -12,8 +12,8 @@ import area04 from "../assets/images/area04.png";
 import area05 from "../assets/images/area05.png";
 import area06 from "../assets/images/area06.png";
 import location from "../assets/icons/location.svg";
-import CarouselText from "@/components/CarouselText";
-import CarouselParagraph from "@/components/CarouselParagraph";
+import CarouselText from "@/components/Carousel/CarouselText";
+import CarouselParagraph from "@/components/Carousel/CarouselParagraph";
 import Paragraph from "@/components/Paragraph";
 
 function area() {
@@ -22,6 +22,7 @@ function area() {
       {/* @ts-ignore */}
       <HeaderImage
         header="The area"
+        //@ts-ignore
         image={area01}
         text="Vesterborg, Denmark"
         icon={location}

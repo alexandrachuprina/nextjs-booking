@@ -1,8 +1,8 @@
 import React from "react";
 import HeaderImage from "@/components/HeaderImage/HeaderImage";
 import Carousel from "@/components/Carousel/Carousel/Carousel";
-import CarouselParagraph from "@/components/CarouselParagraph";
-import CarouselText from "@/components/CarouselText";
+import CarouselParagraph from "@/components/Carousel/CarouselParagraph";
+import CarouselText from "@/components/Carousel/CarouselText";
 
 import hut01 from "../assets/images/hut01.png";
 import hut02 from "../assets/images/hut02.png";

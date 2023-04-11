@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
 import { StaticImageData } from "next/image";
-import styles from "../../styles/components/Gallery/GallerySmall.module.scss";
+import styles from "../../../styles/components/Gallery/GallerySmall.module.scss";
 
 interface Props {
   links: StaticImageData[];

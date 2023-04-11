@@ -2,13 +2,13 @@ import Header from "@/components/Header";
 import Main from "@/components/Main";
 import Map from "@/components/Map";
 import Facilities from "@/components/Facilities";
-import Contacts from "@/components/0";
+import Contacts from "@/components/Contacts/Contacts";
 import HeaderContacts from "@/components/HeaderContacts";
-import GallerySmall from "@/components/GallerySmall";
+import GallerySmall from "@/components/Gallery/GallerySmall";
 
 import contacts01 from "../assets/images/contacts01.png";
 import contacts02 from "../assets/images/contacts02.png";
-import ContactsButton from "@/components/0/ContactsButton";
+import ContactsButton from "@/components/Contacts/ContactsButton";
 
 export default function Home() {
   return (
