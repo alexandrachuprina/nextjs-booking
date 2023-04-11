@@ -1,0 +1,21 @@
+@import '../margins.scss';
+
+.component {
+  margin: $margin-top-xs 0;
+  display: flex;
+  flex-direction: column;
+}
+.fullname {
+  display: flex;
+  flex-direction: column;
+}
+.textarea {
+  all: unset;
+
+  border: 1px solid grey;
+  padding: 10px 0 0 10px;
+  // width: 100%;
+  height: 290px;
+
+  margin-top: $margin-top-xs;
+}

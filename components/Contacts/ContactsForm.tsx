@@ -1,52 +1,21 @@
 import React from "react";
-import { Row, Col, Button, Form, Input, InputNumber } from "antd";
+import { Row, Col } from "antd";
+import styles from "../../styles/components/CotactsForm.module.scss";
+import input from '../../styles/components/inputs/ContactsFromInput.module.scss';
 
 function ContactsForm() {
-  const onFinish = (values: any) => {
-    console.log(values);
-  };
-
   return (
     <Row justify={"center"}>
       <Col span={22}>
-        <Form
-          name="nest-messages"
-          onFinish={onFinish}
-          style={{ maxWidth: 600 }}
-        >
-          <Form.Item
-            name={["user", "name"]}
-            label="First Name"
-            rules={[{ required: true }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name={["user", "email"]}
-            label="Email"
-            rules={[{ type: "email" }]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name={["user", "age"]}
-            label="Age"
-            rules={[{ type: "number", min: 0, max: 99 }]}
-          >
-            <InputNumber />
-          </Form.Item>
-          <Form.Item name={["user", "website"]} label="Website">
-            <Input />
-          </Form.Item>
-          <Form.Item name={["user", "introduction"]} label="Introduction">
-            <Input.TextArea />
-          </Form.Item>
-          <Form.Item >
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
-          </Form.Item>
-        </Form>
+        <div className={styles.component}>
+          <div className={styles.fullname}>
+            <input className={input.component} type="text" placeholder="First Name" />
+            <input className={input.component} type="text" placeholder="Last Name" />
+          </div>
+          <input className={input.component} type="email" placeholder="Email" />
+          <input className={input.component} type="text" placeholder="Subject" />
+          <textarea className={styles.textarea} name="" id="01" placeholder="Message" />
+        </div>
       </Col>
     </Row>
   );
