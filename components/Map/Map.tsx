@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
 import Paragraph from "../Paragraph/Paragraph";
-import styles from "../../styles/components/Map.module.scss";
+import styles from "/styles/components/Map.module.scss";
 
 function Map() {
   return (

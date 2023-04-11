@@ -2,13 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
 import styles from "../../styles/components/Header.module.scss";
-import button from "../../styles/components/buttons/BookingButton.module.scss";
+import button from "../../styles/buttons/BookingButton.module.scss";
 import header from "../../assets/images/header.png";
-
-import Navbar from "../Navbar";
-
-// Font style, font weight
-// Button
 
 function Header() {
   return (

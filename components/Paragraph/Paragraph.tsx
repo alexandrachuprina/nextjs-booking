@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import styles from "../../styles/components/Paragraph.module.scss";
+import styles from "/styles/components/Paragraph.module.scss";
 
 interface Props {
   header: string;

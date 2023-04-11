@@ -11,12 +11,11 @@ import parking from "../../assets/icons/facilities/park.svg";
 import trees from "../../assets/icons/facilities/trees.svg";
 import temperature from "../../assets/icons/facilities/temperature.svg";
 import plug from "../../assets/icons/facilities/plug.svg";
-import wifi from "../../assets/icons/facilities/wifi.svg";
-import shower from "../../assets/icons/facilities/shower.svg";
-import toilet from "../../assets/icons/facilities/toilet.svg";
-import towels from "../../assets/icons/facilities/towels.svg";
+import wifi from "../../../assets/icons/facilities/wifi.svg";
+import shower from "../../../assets/icons/facilities/shower.svg";
+import toilet from "../../../assets/icons/facilities/toilet.svg";
+import towels from "../../../assets/icons/facilities/towels.svg";
 
-// To fix the problem with scopes
 
 function Facilities() {
   return (

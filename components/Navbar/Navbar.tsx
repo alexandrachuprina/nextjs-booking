@@ -3,11 +3,11 @@ import { Row, Col, Drawer, Divider } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../styles/components/Navbar.module.scss";
-import button from "../../styles/components/buttons/MenuButton.module.scss";
+import styles from "/styles/components/Navbar.module.scss";
+import button from "/styles/buttons/MenuButton.module.scss";
 
-import logo from "../../assets/icons/logo.svg";
-import denmark from "../../assets/icons/denmark.svg";
+import logo from "/assets/icons/logo.svg";
+import denmark from "/assets/icons/denmark.svg";
 
 function Navbar() {
   const [phone, setPhone] = useState<any>();

@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderImage from "@/components/HeaderImage/HeaderImage";
-import Carousel from "@/components/Carousel/Carousel";
+import Carousel from "@/components/Carousel/Carousel/Carousel";
 import CarouselParagraph from "@/components/CarouselParagraph";
 import CarouselText from "@/components/CarouselText";
 
@@ -8,7 +8,6 @@ import hut01 from "../assets/images/hut01.png";
 import hut02 from "../assets/images/hut02.png";
 import hut03 from "../assets/images/hut03.png";
 import hut04 from "../assets/images/hut04.png";
-
 
 function hut() {
   return (

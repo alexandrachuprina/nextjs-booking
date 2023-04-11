@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import styles from "../../styles/components/HeaderImage.module.scss";
-import button from "../../styles/components/buttons/HeaderButton.module.scss";
+import button from "../../styles/buttons/HeaderButton.module.scss";
 
 interface Props {
   header: string;

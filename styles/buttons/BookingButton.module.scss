@@ -1,0 +1,37 @@
+@import "../colors.scss";
+
+.component {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: $green;
+  p {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  width: 120px;
+  height: 60px;
+}
+.long {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: $green;
+  p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  width: 190px;
+  height: 60px;
+}

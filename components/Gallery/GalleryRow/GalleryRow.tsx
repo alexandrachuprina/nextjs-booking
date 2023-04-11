@@ -1,25 +1,23 @@
 import React from "react";
-import Image from "next/image";
 import { Row, Col } from "antd";
-import styles from "/styles/components/Quote.module.scss";
+import Image from "next/image";
+import styles from "../../../styles/components/Gallery/GalleryRow.module.scss";
+import { StaticImageData } from "next/image";
 
 interface Props {
-  quote: string;
-  image?: string;
+  links: StaticImageData[];
 }
 
-function Quote(props: Props) {
+function GalleryRow(props: Props) {
   return (
     <Row justify={"center"}>
       <Col span={22}>
         <div className={styles.component}>
-          <h1>{props.quote}</h1>
-
-          {props.image ? (
-            <div className={styles.image}>
+          {props.links.map((elem: any, i: number) => (
+            <div className={styles.image} key={i}>
               <Image
-                src={props.image}
-                alt={"image"}
+                src={elem}
+                alt={`${i}`}
                 fill={true}
                 style={{
                   objectFit: "cover",
@@ -27,11 +25,11 @@ function Quote(props: Props) {
                 }}
               />
             </div>
-          ) : null}
+          ))}
         </div>
       </Col>
     </Row>
   );
 }
 
-export default Quote;
+export default GalleryRow;

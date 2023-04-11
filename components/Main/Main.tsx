@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { Row, Col } from "antd";
-import styles from "../../styles/components/Main.module.scss";
+import styles from "/styles/components/Main.module.scss";
 import Paragraph from "../Paragraph/Paragraph";
 
-import main01 from "../../assets/images/main01.png";
-import main02 from "../../assets/images/main02.png";
-import main03 from "../../assets/images/main03.png";
-import main04 from "../../assets/images/main04.png";
-import GalleryRow from "../GalleryRow";
+import main01 from "/assets/images/main01.png";
+import main02 from "/assets/images/main02.png";
+import main03 from "/assets/images/main03.png";
+import main04 from "/assets/images/main04.png";
+import GalleryRow from "../Gallery/GalleryRow";
 
 // Format scss
 

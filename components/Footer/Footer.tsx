@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import styles from "../../styles/components/Footer.module.scss";
-import input from "../../styles/components/inputs/FooterInput.module.scss";
+import input from "../../styles/inputs/FooterInput.module.scss";
 
 import paypal from "../../assets/icons/social/paypal.svg";
 import mastercard from "../../assets/icons/social/mastercard.svg";
