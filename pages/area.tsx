@@ -15,6 +15,7 @@ import location from "../assets/icons/location.svg";
 import CarouselText from "@/components/Carousel/CarouselText";
 import CarouselParagraph from "@/components/Carousel/CarouselParagraph";
 import Paragraph from "@/components/Paragraph";
+import Map from "@/components/Map";
 
 function area() {
   return (
@@ -155,6 +156,7 @@ function area() {
           ]}
         />
       </CarouselParagraph>
+      <Map fullScreen={true}/>
     </>
   );
 }

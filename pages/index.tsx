@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Header />
       <Main />
-      <Map />
+      <Map fullScreen={false}/>
       <Facilities />
       <GallerySmall links={[contacts01, contacts02]} />
       <HeaderContacts header="Stay in touch with us" />

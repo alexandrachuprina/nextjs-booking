@@ -5,7 +5,11 @@ import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import Paragraph from "../Paragraph/Paragraph";
 import styles from "/styles/components/Map.module.scss";
 
-function Map() {
+interface Props {
+  fullScreen: boolean;
+}
+
+function Map(props: Props) {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyAnwpDzhrhg-Y_FNZo51MJ2TL3qkLTKZGQ",
   });
@@ -18,12 +22,22 @@ function Map() {
 
   return (
     <div className={styles.component}>
-      <GoogleMap
-        zoom={14}
-        center={{ lat: 56.0905754, lng: 10.2128950 }}
-        options={{ disableDefaultUI: true }}
-        mapContainerClassName={styles.map}
-      />
+      {props.fullScreen ? (
+        <GoogleMap
+          zoom={14}
+          center={{ lat: 56.0905754, lng: 10.212895 }}
+          options={{ disableDefaultUI: true }}
+          mapContainerClassName={styles.mapfullscreen}
+        />
+      ) : (
+        <GoogleMap
+          zoom={14}
+          center={{ lat: 56.0905754, lng: 10.212895 }}
+          options={{ disableDefaultUI: true }}
+          mapContainerClassName={styles.map}
+        />
+      )}
+
       <div className={styles.paragraph}>
         <Paragraph
           header="The Forest"
