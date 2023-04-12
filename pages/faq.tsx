@@ -1,5 +1,6 @@
 import React from "react";
 import Answers from "@/components/Answers";
+import Map from "@/components/Map";
 
 function faq() {
   return (
