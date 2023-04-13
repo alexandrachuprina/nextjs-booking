@@ -1,12 +1,22 @@
 @import "../../margins.scss";
+@import '../../queries.scss';
 
 .component {
   display: flex;
   flex-direction: column;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+  }
 }
 .image {
   position: relative;
   width: 320px;
   height: 320px;
+
+  @media (min-width: $sm) {
+    width: 384px;
+    height: 384px;
+  }
 }

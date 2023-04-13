@@ -1,15 +1,34 @@
 @import "../margins.scss";
 @import "../colors.scss";
+@import '../queries.scss';
 
 .component {
   background-color: $lightgreen;
+
+  @media (min-width: $sm) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.paragraph {
+
+  @media (min-width: $sm) {
+    width: 389px;
+  }
+
 }
 .map {
   width: 320px;
   height: 320px;
   filter: brightness(80%) grayscale(40%);
+
+  @media (min-width: $sm) {
+    width: 389px;
+  }
 }
 .mapfullscreen {
   width: 100%;
   height: 320px;
+  filter: brightness(80%) grayscale(40%);
 }

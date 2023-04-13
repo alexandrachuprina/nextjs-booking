@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row, Col } from "antd";
 import Image from "next/image";
 import styles from '../../../styles/buttons/ContactsButton.module.scss';
 import button from "../../../styles/buttons/BookingButton.module.scss";
@@ -7,8 +6,6 @@ import contacts03 from "../../../assets/images/contacts03.png";
 
 function ContactsButton() {
   return (
-    <Row justify={'center'}>
-      <Col span={22}>
       <div className={styles.button}>
               <div className={styles.image}>
                 <Image
@@ -25,8 +22,6 @@ function ContactsButton() {
                 <p>Book now</p>
               </button>
             </div>
-      </Col>
-    </Row>
   )
 }
 

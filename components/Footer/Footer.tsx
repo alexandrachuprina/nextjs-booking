@@ -23,33 +23,33 @@ function Footer() {
                 your next order.
               </p>
             </div>
+            <div className={styles.text}>
+              <div className={styles.docs}>
+                <div className={styles.list}>
+                  <p>TERMS AND CONDITIONS</p>
+                  <p>CENCELLATION POLICY</p>
+                  <p>PRIVACY POLICY</p>
+                </div>
 
-            <div className={styles.docs}>
-              <div className={styles.list}>
-                <p>TERMS AND CONDITIONS</p>
-                <p>CENCELLATION POLICY</p>
-                <p>PRIVACY POLICY</p>
-              </div>
-
-              <div className={styles.logos}>
-                <div className={styles.logo}>
-                  <Image src={paypal} alt={"contacts"} fill={true} />
+                <div className={styles.logos}>
+                  <div className={styles.logo}>
+                    <Image src={paypal} alt={"contacts"} fill={true} />
+                  </div>
+                  <div className={styles.logo}>
+                    <Image src={mastercard} alt={"contacts"} fill={true} />
+                  </div>
+                  <div className={styles.logo}>
+                    <Image src={visa} alt={"contacts"} fill={true} />
+                  </div>
+                  <div className={styles.logo}>
+                    <Image src={bank} alt={"contacts"} fill={true} />
+                  </div>
                 </div>
-                <div className={styles.logo}>
-                  <Image src={mastercard} alt={"contacts"} fill={true} />
-                </div>
-                <div className={styles.logo}>
-                  <Image src={visa} alt={"contacts"} fill={true} />
-                </div>
-                <div className={styles.logo}>
-                  <Image src={bank} alt={"contacts"} fill={true} />
-                </div>
-              </div>
-
-              <div className={styles.copyright}>
-                <p>© 2023 The Glass Huts</p>
               </div>
             </div>
+            <div className={styles.copyright}>
+                <p>© 2023 The Glass Huts</p>
+              </div>
           </div>
         </Col>
       </Row>

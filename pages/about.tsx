@@ -10,7 +10,7 @@ import about03 from "../assets/images/about03.png";
 import about04 from "../assets/images/about04.png";
 import about05 from "../assets/images/about05.png";
 import about06 from "../assets/images/about06.png";
-import HeaderContacts from "@/components/HeaderContacts";
+import HeaderContacts from "@/components/Contacts/HeaderContacts";
 import Contacts from "@/components/Contacts/Contacts";
 import ContactsForm from "@/components/Contacts/ContactsFrom";
 import ContactsLogo from "@/components/Contacts/ContactsLogo";
@@ -18,10 +18,9 @@ import ContactsLogo from "@/components/Contacts/ContactsLogo";
 function about() {
   return (
     <>
-     
       <HeaderImage
         header="About us"
-        // @ts-ignore 
+        // @ts-ignore
         image={about01}
         button={["contact us", "read faq"]}
       />
@@ -48,7 +47,7 @@ function about() {
       <HeaderContacts header="Stay in touch with us" />
       <Contacts />
       <ContactsForm />
-      <ContactsLogo/>
+      <ContactsLogo />
     </>
   );
 }

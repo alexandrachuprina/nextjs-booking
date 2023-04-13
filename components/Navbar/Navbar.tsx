@@ -3,8 +3,9 @@ import { Row, Col, Drawer, Divider } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "/styles/components/Navbar.module.scss";
-import button from "/styles/buttons/MenuButton.module.scss";
+import styles from "../..//styles/components/Navbar.module.scss";
+import button from "../..//styles/buttons/MenuButton.module.scss";
+import booknow from '../../styles/buttons/BookingButton.module.scss';
 
 import logo from "/assets/icons/logo.svg";
 import denmark from "/assets/icons/denmark.svg";
@@ -106,7 +107,7 @@ function Navbar() {
                   </Link>
                 </div>
 
-                <button>book now</button>
+                <button className={booknow.component}><p>book now</p></button>
               </div>
             </Col>
           </Row>

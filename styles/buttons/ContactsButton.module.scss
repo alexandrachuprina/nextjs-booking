@@ -4,6 +4,10 @@
 
 .button {
   margin: $margin-top-xs 0;
+
+  @media (min-width: $sm) {
+    margin: 0;
+  }
 }
 .image {
   position: relative;

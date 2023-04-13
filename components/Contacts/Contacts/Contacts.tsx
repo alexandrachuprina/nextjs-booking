@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Col } from "antd";
 import Image from "next/image";
 import styles from "../../../styles/components/Contacts/Contacts.module.scss";
 import inst from "../../../assets/icons/social/inst.svg";
@@ -8,8 +7,6 @@ import twitter from "../../../assets/icons/social/twitter.svg";
 
 function Contacts() {
   return (
-    <Row justify={"center"}>
-      <Col span={22}>
         <div className={styles.component}>
           <div className={styles.contacts}>
             <div className={styles.text}>
@@ -30,8 +27,6 @@ function Contacts() {
             </div>
           </div>
         </div>
-      </Col>
-    </Row>
   );
 }
 
