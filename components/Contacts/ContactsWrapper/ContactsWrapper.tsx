@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 import styles from "../../../styles/components/Contacts/ContactsWrapper.module.scss";
 
 interface children {
-  children: JSX.Element[];
+  children: JSX.Element[] | JSX.Element;
 }
 
 function ContactsWrapper(props: children) {

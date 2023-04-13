@@ -12,15 +12,15 @@ import about05 from "../assets/images/about05.png";
 import about06 from "../assets/images/about06.png";
 import HeaderContacts from "@/components/Contacts/HeaderContacts";
 import Contacts from "@/components/Contacts/Contacts";
-import ContactsForm from "@/components/Contacts/ContactsFrom";
+import ContactsForm from "@/components/Contacts/ContactsForm";
 import ContactsLogo from "@/components/Contacts/ContactsLogo";
+import ContactsWrapper from "@/components/Contacts/ContactsWrapper";
 
 function about() {
   return (
     <>
       <HeaderImage
         header="About us"
-        // @ts-ignore
         image={about01}
         button={["contact us", "read faq"]}
       />
@@ -45,7 +45,9 @@ function about() {
         image05={about06}
       />
       <HeaderContacts header="Stay in touch with us" />
-      <Contacts />
+      <ContactsWrapper>
+        <Contacts />
+      </ContactsWrapper>
       <ContactsForm />
       <ContactsLogo />
     </>

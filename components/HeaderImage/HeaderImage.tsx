@@ -7,7 +7,7 @@ import button from "../../styles/buttons/HeaderButton.module.scss";
 
 interface Props {
   header: string;
-  image: string;
+  image: StaticImageData;
   text?: string;
   icon?: StaticImageData;
   button?: string[];
@@ -32,23 +32,19 @@ function HeaderImage(props: Props) {
             <div className={styles.text}>
               {props.icon ? (
                 <div className={styles.icon}>
-                  <Image
-                    src={props.icon}
-                    alt="icon"
-                    fill={true}
-                  />
+                  <Image src={props.icon} alt="icon" fill={true} />
                 </div>
               ) : null}
               <p>{props.text}</p>
             </div>
             {props.button ? (
-              <>
+              <div className={styles.buttons}>
                 {props.button.map((elem: any, i: number) => (
                   <button className={button.component} key={i}>
                     <p>{elem}</p>
                   </button>
                 ))}
-              </>
+              </div>
             ) : null}
           </div>
         </Col>

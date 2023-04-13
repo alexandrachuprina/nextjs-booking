@@ -40,3 +40,17 @@
   width: 10px;
   margin-right: 10px;
 }
+.buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+  }
+
+  button {
+    @media (min-width: $sm) {
+      margin: 0 20px;
+    }
+  }
+}

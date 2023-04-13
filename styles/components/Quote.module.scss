@@ -12,11 +12,15 @@
   @media (min-width: $sm) {
     flex-direction: row;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     h1 {
       width: 290px;
     }
   }
+}
+.text {
+  margin: $margin-top-xs 0;
 }
 .image {
   position: relative;
@@ -25,6 +29,5 @@
 
   @media (min-width: $sm) {
     width: 300px;
-
   }
 }

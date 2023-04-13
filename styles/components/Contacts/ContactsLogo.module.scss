@@ -1,7 +1,7 @@
 @import '../../margins.scss';
 
 .component {
-  margin-bottom: $margin-top-xs;
+  margin: $margin-top-xs 0;
   display: flex;
   flex-direction: column;
   align-items: center;

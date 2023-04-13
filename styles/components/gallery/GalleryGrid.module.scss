@@ -3,43 +3,58 @@
 @import "../../margins.scss";
 
 .component {
-  margin-top: $margin-top-xs;
+  margin: $margin-top-xs 0;
   display: grid;
 
-  // @media (min-width: $xs) {
-  //   grid-template-columns: 100%;
-  //   grid-template-rows: 290px 100px ;
-  //   grid-area: 
-  //   '01'
-  //   '02'
-  //   '03'
-  //   '04'
-  //   '05';
-  // }
+  @media (min-width: $sm) {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 200px);
+    column-gap: 5%;
+    row-gap: 30px;
+    grid-template-areas: 
+    'img1 img2 img2'
+    'img3 text img5';
+  }
 }
 .image01 {
-  grid-area: '01';
   position: relative;
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .image02 {
-  grid-area: '02';
   position: relative;
   width: 290px;
   height: 100px;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .image03 {
-  grid-area: '03';
   position: relative;
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .image04 {
-  grid-area: '04';
+  grid-area: 'text';
   width: 290px;
   height: 290px;
   background-color: $lightgreen;
@@ -50,11 +65,22 @@
   justify-content: center;
   padding: 20px;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 .image05 {
-  grid-area: '05';
   position: relative;
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

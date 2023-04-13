@@ -6,7 +6,7 @@ import input from '../../../styles/inputs/ContactsFromInput.module.scss';
 function ContactsForm() {
   return (
     <Row justify={"center"}>
-      <Col span={22}>
+      <Col xs={22} sm={20}>
         <div className={styles.component}>
           <div className={styles.fullname}>
             <input className={input.component} type="text" placeholder="First Name" />
