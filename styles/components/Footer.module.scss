@@ -3,6 +3,7 @@
 @import "../margins.scss";
 
 .component {
+  display: flex;
   padding: $margin-top-xs 0;
   background-color: $green;
 
@@ -11,6 +12,7 @@
     color: white;
     margin-bottom: $margin-bottom-h2-xs;
   }
+  margin-top: auto;
 }
 .footer {
   display: grid;

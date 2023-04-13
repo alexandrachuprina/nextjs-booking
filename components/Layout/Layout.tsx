@@ -7,7 +7,7 @@ interface LayoutProps {
 }
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div style={{ minHeight: "100vh", display: 'flex', flexDirection: 'column'}}>
       <Navbar />
       {children}
       <Footer />
