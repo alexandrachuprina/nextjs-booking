@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Row, Col } from "antd";
 import styles from "../../../styles/components/Carousel/CarouselText.module.scss";
 
 interface data {
@@ -21,8 +20,6 @@ function CarouselText(props: Props) {
   }
 
   return (
-    <Row justify={"center"}>
-      <Col span={22}>
         <div className={styles.component}>
           <h2>{props.data[0].header}</h2>
           <div className={styles.links}>
@@ -46,8 +43,6 @@ function CarouselText(props: Props) {
             <p>{props.data[index].description}</p>
           </div>
         </div>
-      </Col>
-    </Row>
   );
 }
 

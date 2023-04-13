@@ -8,8 +8,8 @@ interface children {
 }
 function CarouselParagraph(props: children) {
   return (
-    <Row>
-      <Col>
+    <Row justify={'center'}>
+      <Col xs={22} sm={20}>
       <div className={styles.component}>
         {props.children}
       </div>

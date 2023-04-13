@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { Row, Col } from "antd";
 import { StaticImageData } from "next/image";
 
 import arrowLeft from '../../../assets/icons/arrowLeft.svg';
@@ -36,8 +35,7 @@ function Carousel(props: Props) {
   }
 
   return (
-    <Row justify={"center"}>
-      <Col span={22}>
+
         <div className={styles.component}>
           <div className={styles.image}>
             <Image src={props.data[index].image} alt="image" fill={true} />
@@ -60,8 +58,6 @@ function Carousel(props: Props) {
 
           </div>
         </div>
-      </Col>
-    </Row>
   );
 }
 

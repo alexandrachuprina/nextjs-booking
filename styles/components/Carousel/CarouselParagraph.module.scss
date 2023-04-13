@@ -1,7 +1,14 @@
 @import '../../margins.scss';
+@import '../../queries.scss';
 
 .component {
   display: flex;
   flex-direction: column;
-  margin-top: $margin-top-xs;
+  margin: $margin-top-xs 0;
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 60px 0;
+  }
 }

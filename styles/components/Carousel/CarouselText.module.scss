@@ -1,9 +1,14 @@
 @import '../../margins.scss';
+@import '../../queries.scss';
 
 .component {
   display: flex;
   flex-direction: column;
   margin-top: $margin-top-xs;
+
+  @media (min-width: $sm) {
+    width: 290px;
+  }
 }
 .links {
   display: flex;
