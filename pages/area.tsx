@@ -33,14 +33,18 @@ function area() {
         <Carousel
           data={[{ image: area02 }, { image: area03 }, { image: area04 }]}
         />
-        <Paragraph
-          header="Vesterborg"
-          description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-      accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
-      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
-      magni dolores eos qui ratione voluptatem sequi nesciunt. "
-          reverse={true}
+        <CarouselText
+          data={[
+            {
+              id: 0,
+              header: "Vesterborg",
+              description: `Løvtags three exclusive and comfortable cabins, Et, Ro and Ly, 
+              are designed by architect Sigurd Larsen. They all have an open 
+              space with a double bed, a double sofa bed, kitchen, separate 
+              toilet and an outdoor shower. On the roof, surrounded by treetops, 
+              there is a terrace, which is about nine meters above ground.`,
+            },
+          ]}
         />
       </CarouselParagraph>
       <Quote
@@ -156,7 +160,7 @@ function area() {
           ]}
         />
       </CarouselParagraph>
-      <Map fullScreen={true}/>
+      <Map fullScreen={true} />
     </>
   );
 }

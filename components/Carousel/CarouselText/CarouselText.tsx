@@ -4,7 +4,7 @@ import styles from "../../../styles/components/Carousel/CarouselText.module.scss
 interface data {
   id: number;
   header: string;
-  link: string;
+  link?: string;
   description: string;
 }
 

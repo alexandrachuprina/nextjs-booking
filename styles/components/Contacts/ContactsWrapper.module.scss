@@ -3,7 +3,7 @@
 
 .component {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: $margin-top-xs 0;
 
   @media (min-width: $sm) {
