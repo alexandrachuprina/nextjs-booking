@@ -11,9 +11,8 @@ interface Props {
 
 function Map(props: Props) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAnwpDzhrhg-Y_FNZo51MJ2TL3qkLTKZGQ",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
   });
-  // const key = "AIzaSyAnwpDzhrhg-Y_FNZo51MJ2TL3qkLTKZGQ";
 
   if (!isLoaded) {
     console.log("done!");
@@ -21,24 +20,23 @@ function Map(props: Props) {
   }
 
   return (
-  
-      <div className={styles.component}>
-        {props.fullScreen ? (
-          <GoogleMap
-            zoom={14}
-            center={{ lat: 56.0905754, lng: 10.212895 }}
-            options={{ disableDefaultUI: true }}
-            mapContainerClassName={styles.mapfullscreen}
-          />
-        ) : (
+    <div className={styles.component}>
+      {props.fullScreen ? (
+        <GoogleMap
+          zoom={14}
+          center={{ lat: 56.0905754, lng: 10.212895 }}
+          options={{ disableDefaultUI: true }}
+          mapContainerClassName={styles.mapfullscreen}
+        />
+      ) : (
+        <>
           <GoogleMap
             zoom={14}
             center={{ lat: 56.0905754, lng: 10.212895 }}
             options={{ disableDefaultUI: true }}
             mapContainerClassName={styles.map}
           />
-        )}
-  
+
           <div className={styles.paragraph}>
             <Paragraph
               header="The Forest"
@@ -52,9 +50,9 @@ function Map(props: Props) {
               reverse={false}
             />
           </div>
-       
-      </div>
- 
+        </>
+      )}
+    </div>
   );
 }
 

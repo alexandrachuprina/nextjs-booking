@@ -1,4 +1,5 @@
 @import "../margins.scss";
+@import '../queries.scss';
 
 .component {
   display: flex;
@@ -7,9 +8,23 @@
   h1 {
     margin-bottom: $margin-top-xs;
   }
+
+  @media (min-width: $sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      width: 290px;
+    }
+  }
 }
 .image {
   position: relative;
   width: 290px;
   height: 300px;
+
+  @media (min-width: $sm) {
+    width: 300px;
+
+  }
 }

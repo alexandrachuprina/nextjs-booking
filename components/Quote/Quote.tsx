@@ -11,7 +11,7 @@ interface Props {
 function Quote(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col span={22}>
+      <Col xs={22} sm={20}>
         <div className={styles.component}>
           <h1>{props.quote}</h1>
 
