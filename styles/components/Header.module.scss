@@ -27,18 +27,27 @@
       width: 260px;
       margin-bottom: $margin-bottom-h2-xs;
     }
+    @media (min-width: $sm) {
+      width: 600px;
+      margin-bottom: $margin-bottom-h2-xs;
+    }
   }
+
   @media (min-width: $xs) {
     margin: 50px 0 0 0;
   }
+
 }
 .subheader {
   p {
-    // font-style: thin;
     font-weight: 400;
 
     @media (min-width: $xs) {
       width: 260px;
+    }
+    @media (min-width: $sm) {
+      width: 600px;
+      margin-bottom: $margin-bottom-h2-xs;
     }
   }
 }
