@@ -23,7 +23,7 @@ function Header() {
       <Row justify={"center"} style={{ height: "70vh" }}>
         <Col xs={22} sm={20} lg={17}>
           <div className={styles.header}>
-            <h2>Find peace in the Forest</h2>
+            <p>Find peace in the Forest</p>
             <div className={styles.subheader}>
               <p>
                 Come and stay in out hut hotel near Mariager Fjord in Denmark

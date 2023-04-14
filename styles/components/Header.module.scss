@@ -12,14 +12,19 @@
   p {
     color: white;
   }
+
+  @media (min-width: $xs) {
+    height: 700px;
+  }
+
 }
 .wrapper {
   height: 100%;
   width: 100%;
 }
 .header {
-  h2 {
-    font-size: 50px;
+  p {
+    font-size: 50px;  
     line-height: 50px;
     font-weight: 300;
 
@@ -36,11 +41,21 @@
   @media (min-width: $xs) {
     margin: 50px 0 0 0;
   }
+  @media (min-width: $xl) {
+    margin: 95px 0 0 300px;
 
+    p {
+      width: 743px;
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
 }
 .subheader {
   p {
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 20px;
 
     @media (min-width: $xs) {
       width: 260px;
@@ -49,13 +64,26 @@
       width: 600px;
       margin-bottom: $margin-bottom-h2-xs;
     }
+    @media (min-width: $xl) {
+      width: 743px;
+      padding: 0 94px 0 326px;
+    }
+  }
+
+  @media (min-width: $xl) {
+    margin-top: 34px;
   }
 }
 .button {
   margin-top: 20px;
   display: inline-block;
+
+  @media (min-width: $xs) {
+    margin-left: 300px;
+  }
 }
 .bt-header {
   appearance: none;
   background-color: $green;
 }
+
