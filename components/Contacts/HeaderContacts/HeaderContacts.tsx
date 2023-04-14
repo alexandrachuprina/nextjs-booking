@@ -9,7 +9,7 @@ interface Props {
 function HeaderContacts(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20}>
+      <Col xs={22} sm={20} lg={17}>
         <div className={styles.component}>
           <h2>{props.header}</h2>
         </div>

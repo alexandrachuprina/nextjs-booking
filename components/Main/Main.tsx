@@ -10,7 +10,6 @@ import main03 from "/assets/images/main03.png";
 import main04 from "/assets/images/main04.png";
 import GalleryRow from "../Gallery/GalleryRow";
 
-// Format scss
 
 function Main() {
   return (

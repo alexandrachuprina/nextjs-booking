@@ -12,7 +12,7 @@ interface Props {
 function Quote(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20}>
+      <Col xs={22} sm={20} lg={17}>
         {props.image ? (
           <div className={styles.component}>
             <h1>{props.quote}</h1>

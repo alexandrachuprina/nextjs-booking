@@ -20,7 +20,7 @@ function Answers(props: Props) {
 
   return (
     <Row justify={"center"}>
-      <Col span={22}>
+      <Col xs={22} sm={20} lg={17}>
         <div className={styles.component}>
           <Collapse onChange={onChange} expandIconPosition={"end"}>
             {props.content.map((elem: any, i: number) => (

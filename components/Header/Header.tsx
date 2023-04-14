@@ -21,7 +21,7 @@ function Header() {
       />
 
       <Row justify={"center"} style={{ height: "70vh" }}>
-        <Col span={22}>
+        <Col xs={22} sm={20} lg={17}>
           <div className={styles.header}>
             <h2>Find peace in the Forest</h2>
             <div className={styles.subheader}>

@@ -25,6 +25,11 @@
   height: 20px;
   margin-bottom: $margin-bottom-h2-xs;
 }
+.smalllogonav {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
 
 .component {
   display: flex;
@@ -36,8 +41,9 @@
 .nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   p {
     text-transform: uppercase;
-    padding: $margin-bottom-h2-xs $margin-bottom-h2-xs 0 $margin-bottom-h2-xs;
+    margin-right: $margin-bottom-h2-xs;
   }
 }

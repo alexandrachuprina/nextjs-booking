@@ -9,7 +9,7 @@ interface children {
 function ContactsWrapper(props: children) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20}>
+      <Col xs={22} sm={20} lg={17}>
         <div className={styles.component}>{props.children}</div>
       </Col>
     </Row>

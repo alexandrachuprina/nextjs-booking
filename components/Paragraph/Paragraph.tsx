@@ -15,7 +15,7 @@ interface Props {
 function Paragraph(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20}>
+      <Col xs={22} sm={20} lg={17}>
         <div className={styles.component}>
           {props.reverse ? (
             <>
@@ -35,7 +35,7 @@ function Paragraph(props: Props) {
               <div className={styles.text}>
                 <h2>{props.header}</h2>
                 <p>{props.description}</p>
-                <p>{props.link}</p>
+                <p className={styles.link}> {props.link}</p>
               </div>
               {props.image ? (
                 <div className={styles.photo}>

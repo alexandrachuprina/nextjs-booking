@@ -11,9 +11,8 @@ import bank from "../../assets/icons/social/bank.svg";
 
 function Footer() {
   return (
-    <div className={styles.component}>
-      <Row justify={"center"}>
-        <Col span={22}>
+      <Row justify={"center"} style={{backgroundColor: '#5b6460', padding: '30px 0', marginTop: 'auto'}}>
+        <Col xs={22} sm={20} lg={17}>
           <div className={styles.footer}>
             <div className={styles.newsletter}>
               <h2>Newsletter</h2>
@@ -23,8 +22,9 @@ function Footer() {
                 your next order.
               </p>
             </div>
+
             <div className={styles.text}>
-              <div className={styles.docs}>
+              
                 <div className={styles.list}>
                   <p>TERMS AND CONDITIONS</p>
                   <p>CENCELLATION POLICY</p>
@@ -44,16 +44,16 @@ function Footer() {
                   <div className={styles.logo}>
                     <Image src={bank} alt={"contacts"} fill={true} />
                   </div>
-                </div>
               </div>
+
             </div>
+
             <div className={styles.copyright}>
                 <p>© 2023 The Glass Huts</p>
               </div>
           </div>
         </Col>
       </Row>
-    </div>
   );
 }
 
