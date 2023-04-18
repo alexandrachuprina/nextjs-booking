@@ -21,7 +21,10 @@ function Facilities() {
   return (
     <div className={styles.component}>
       <Row justify={"center"}>
-        <Col xs={22} sm={20} lg={20}>
+        <Col xs={22} sm={20} lg={20} xl={18}>
+          <div className={styles.header}>
+            <h2>Facilities</h2>
+          </div>
           <div className={styles.facilities}>
             <div className={styles.facility}>
               <div className={styles.image}>

@@ -26,12 +26,31 @@
     column-gap: 10%;
     grid-template-rows: repeat(2, 100px);
   }
+  @media (min-width: $lg) {
+    height: 477px;
+    padding-top: 40px;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    grid-template-rows: repeat(2, 200px);
+  }
 }
 .newsletter {
   display: flex;
   flex-direction: column;
   p {
     margin-top: $margin-bottom-h2-xs;
+  }
+
+  @media (min-width: $xl) {
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+      width: 418px;
+    }
   }
 }
 .docs {
@@ -42,7 +61,6 @@
   display: flex;
   flex-direction: column;
 
-
   @media (min-width: $sm) {
     flex-direction: row;
     p {
@@ -52,16 +70,32 @@
   @media (min-width: $sm) {
     flex-direction: column;
   }
+  @media (min-width: $xl) {
+    flex-direction: row;
+    p {
+      margin: 0 30px 60px 0;
+    }
+  }
 }
 .logos {
   display: flex;
   flex-direction: row;
+
+  @media (min-width: $xl) {
+    justify-content: flex-end;
+  }
 }
 .logo {
   position: relative;
   width: 30px;
   height: 30px;
   margin-right: 20px;
+
+  @media (min-width: $xl) {
+    width: 48px;
+    height: 48px;
+    margin-right: 40px;
+  }
 }
 .copyright {
   margin-top: 40px;

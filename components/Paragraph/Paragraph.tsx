@@ -15,7 +15,7 @@ interface Props {
 function Paragraph(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20} lg={17}>
+      <Col xs={22} sm={20} lg={17} xl={20}>
         <div className={styles.component}>
           {props.reverse ? (
             <>

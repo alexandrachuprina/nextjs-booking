@@ -12,10 +12,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  @media (min-width: $xl) {
+    margin: 0 0 135px 0;
+  }
 }
 .image {
   position: relative;
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
+
+  @media (min-width: $xl) {
+    width: 432px;
+    height: 387px;
+    margin-bottom: 0;
+  }
 }

@@ -12,7 +12,7 @@ import bank from "../../assets/icons/social/bank.svg";
 function Footer() {
   return (
       <Row justify={"center"} style={{backgroundColor: '#5b6460', padding: '30px 0', marginTop: 'auto'}}>
-        <Col xs={22} sm={20} lg={17}>
+        <Col xs={22} sm={20} lg={17} xl={20}>
           <div className={styles.footer}>
             <div className={styles.newsletter}>
               <h2>Newsletter</h2>

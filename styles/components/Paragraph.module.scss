@@ -11,6 +11,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $xl) {
+    margin: 150px 0;
+    height: 438px;
+  }
 }
 .text {
   display: flex;
@@ -24,6 +29,23 @@
     width: 290px;
     justify-content: center;
   }
+
+  @media (min-width: $xl) {
+    width: 465px;   
+    margin: 150px 0;
+    h1,
+    h2 {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+      padding-bottom: 20px;
+    }
+  }
 }
 .link {
   text-decoration: underline;
@@ -33,4 +55,10 @@
   width: 290px;
   height: 290px;
   margin-bottom: $margin-top-xs;
+
+
+  @media (min-width: $xl) {
+    width: 600px;
+    height: 438px;
+  }
 }

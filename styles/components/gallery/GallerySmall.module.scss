@@ -23,4 +23,8 @@
     width: 512px;
     height: 512px;
   }
+  @media (min-width: $lg) {
+    width: 770px;
+    height: 670px;
+  }
 }

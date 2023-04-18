@@ -1,5 +1,11 @@
 @import "../margins.scss";
+@import '../queries.scss';
 
-// .component {
-//   margin-top: $margin-top-xs;
-// }
+.component {
+  @media (min-width: $xl) {
+    margin-top: 150px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
