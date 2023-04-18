@@ -13,7 +13,7 @@
     color: white;
   }
 
-  @media (min-width: $xs) {
+  @media (min-width: $sm) {
     height: 700px;
   }
 
@@ -78,7 +78,7 @@
   margin-top: 20px;
   display: inline-block;
 
-  @media (min-width: $xs) {
+  @media (min-width: $xl) {
     margin-left: 300px;
   }
 }

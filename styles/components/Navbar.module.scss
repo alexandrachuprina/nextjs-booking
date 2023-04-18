@@ -2,6 +2,7 @@
 @import "../colors.scss";
 @import "../margins.scss";
 
+// PHONE
 .componentphone {
   display: flex;
   flex-direction: row;
@@ -31,6 +32,7 @@
   height: 20px;
 }
 
+// DESKTOP
 .component {
   display: flex;
   flex-direction: row;
@@ -45,5 +47,15 @@
   p {
     text-transform: uppercase;
     margin-right: $margin-bottom-h2-xs;
+  }
+
+  @media (min-width: $xl) {
+    width: 540px;
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      margin-right: 30px;
+    }
   }
 }
