@@ -16,6 +16,7 @@ import CarouselText from "@/components/Carousel/CarouselText";
 import CarouselParagraph from "@/components/Carousel/CarouselParagraph";
 import Paragraph from "@/components/Paragraph";
 import Map from "@/components/Map";
+import HeaderContacts from "@/components/Contacts/HeaderContacts";
 
 function area() {
   return (
@@ -52,6 +53,7 @@ function area() {
         /* @ts-ignore */
         image={map}
       />
+      <HeaderContacts header="Activities"/>
       <CarouselParagraph>
         <Carousel
           data={[{ image: area03 }, { image: area02 }, { image: area04 }]}

@@ -16,6 +16,9 @@
     'img1 img2 img2'
     'img3 text img5';
   }
+  @media (min-width: $xl) {
+    grid-template-rows: repeat(2, 400px);
+  }
 }
 .image01 {
   position: relative;

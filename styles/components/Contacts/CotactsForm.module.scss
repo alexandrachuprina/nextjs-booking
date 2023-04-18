@@ -1,12 +1,23 @@
 @import '../../margins.scss';
+@import '../../queries.scss';
 
 .component {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $xl) {
+    width: 660px;
+  }
 }
 .fullname {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $xl) {
+   flex-direction: row;
+   justify-content: space-between;
+  }
+
 }
 .textarea {
   all: unset;

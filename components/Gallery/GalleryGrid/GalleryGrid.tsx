@@ -15,7 +15,7 @@ interface Props {
 function GalleryGrid(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20} lg={17}>
+      <Col xs={22} sm={20} lg={17} xl={24}> 
         <div className={styles.component}>
           <div className={styles.image01} style={{gridArea: 'img1'}}>
             <Image src={props.image01} alt={`image`} fill={true}/>

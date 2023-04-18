@@ -16,6 +16,16 @@
     align-items: center;
     h1 {
       width: 290px;
+      color: #5B6460;
+    }
+  }
+  @media (min-width: $xl) {
+    margin: 150px 0 0 0;
+    h1 {
+      width: 424px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
     }
   }
 }
@@ -29,5 +39,9 @@
 
   @media (min-width: $sm) {
     width: 300px;
+  }
+  @media (min-width: $xl) {
+    height: 440px;
+    width: 450px;
   }
 }

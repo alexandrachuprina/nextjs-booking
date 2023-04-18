@@ -6,6 +6,7 @@ import styles from "/styles/components/Paragraph.module.scss";
 
 interface Props {
   header: string;
+  longHeader?: string;
   description: string;
   link?: string;
   image?: StaticImageData;
@@ -25,6 +26,7 @@ function Paragraph(props: Props) {
                 </div>
               ) : null}
               <div className={styles.text}>
+              <h1>{props.longHeader}</h1>
                 <h2>{props.header}</h2>
                 <p>{props.description}</p>
                 <p>{props.link}</p>
@@ -33,6 +35,7 @@ function Paragraph(props: Props) {
           ) : (
             <>
               <div className={styles.text}>
+                <h1>{props.longHeader}</h1>
                 <h2>{props.header}</h2>
                 <p>{props.description}</p>
                 <p className={styles.link}> {props.link}</p>

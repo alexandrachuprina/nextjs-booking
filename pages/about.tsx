@@ -25,7 +25,8 @@ function about() {
         button={["contact us", "read faq"]}
       />
       <Paragraph
-        header="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        header=""
+        longHeader="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
       tempor incididunt ut labore et dolore magna aliqua."
         description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
       accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
@@ -47,8 +48,8 @@ function about() {
       <HeaderContacts header="Stay in touch with us" />
       <ContactsWrapper>
         <Contacts />
+        <ContactsForm />
       </ContactsWrapper>
-      <ContactsForm />
       <ContactsLogo />
     </>
   );

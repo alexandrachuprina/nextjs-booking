@@ -9,6 +9,22 @@
   @media (min-width: $sm) {
     width: 290px;
   }
+  @media (min-width: $xl) {
+    width: 429px;
+    justify-content: center;
+    margin: 0;
+    h2 {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 50px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
 }
 .links {
   display: flex;
@@ -16,6 +32,10 @@
   margin: $margin-bottom-h2-xs 0;
   p {
     margin-right: $margin-bottom-h2-xs;
+  }
+
+  @media (min-width: $xl) {
+    margin-bottom: 50px;
   }
 }
 .underlined {

@@ -13,6 +13,10 @@
   @media (min-width: $sm) {
     margin-bottom: $margin-top-xs;
   }
+  @media (min-width: $xl) {
+    height: 350px;
+    margin-bottom: 150px;
+  }
 }
 .header {
   display: flex;

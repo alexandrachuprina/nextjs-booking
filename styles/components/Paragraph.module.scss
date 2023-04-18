@@ -33,7 +33,12 @@
   @media (min-width: $xl) {
     width: 465px;   
     margin: 150px 0;
-    h1,
+    h1 {
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 30px;
+      padding-bottom: 20px;
+    }
     h2 {
       font-weight: 400;
       font-size: 40px;
