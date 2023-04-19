@@ -41,3 +41,39 @@
     width: 386px;
   }
 }
+.booking_card {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: $green;
+  p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  width: 100%;
+  height: 40px;
+}
+.coupon {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: $green;
+  p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  width: 25%;
+  height: 40px;
+}

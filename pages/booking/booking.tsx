@@ -5,6 +5,7 @@ import header from "../../assets/images/booking.png";
 import icon from "../../assets/icons/location.svg";
 import BookingReminder from "@/components/Booknig/BookingReminder";
 import BookingWrapper from "@/components/Booknig/BookungWrapper";
+import BookingCard from "@/components/Booknig/BookingCard";
 
 function booking() {
   return (
@@ -16,6 +17,7 @@ function booking() {
         icon={icon}
       />
       <BookingWrapper>
+        <BookingCard/>
         <BookingReminder
           header="Hut rules"
           list={[

@@ -17,7 +17,7 @@ function BookingReminder(props: Props) {
       {props.list ? (
         <ul>
           {props.list.map((elem: string, i: number) => (
-            <li><p>{elem}</p></li>
+            <li key={i}><p>{elem}</p></li>
           ))}
         </ul>
       ) : (
