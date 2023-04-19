@@ -6,6 +6,7 @@ import icon from "../../assets/icons/location.svg";
 import BookingReminder from "@/components/Booknig/BookingReminder";
 import BookingWrapper from "@/components/Booknig/BookungWrapper";
 import BookingCard from "@/components/Booknig/BookingCard";
+import Services from "@/components/AdditionalServices/Services";
 
 function booking() {
   return (
@@ -17,6 +18,7 @@ function booking() {
         icon={icon}
       />
       <BookingWrapper>
+        <Services/>
         <BookingCard/>
         <BookingReminder
           header="Hut rules"

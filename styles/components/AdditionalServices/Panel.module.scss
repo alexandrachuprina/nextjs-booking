@@ -1,0 +1,42 @@
+@import '../../colors.scss';
+
+.component {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.panel {
+  padding: 10px;
+  background-color: $lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.panel_info {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+.price {
+  display: flex;
+  flex-direction: row;
+}
+.collapse {
+  padding: 10px;
+  p {
+    font-size: 10px;
+  }
+}
+.collapse_btn {
+  text-transform: lowercase;
+  font-size: 10px;
+}
