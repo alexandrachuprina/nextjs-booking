@@ -1,0 +1,36 @@
+.component {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.line {
+  margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.card_details {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
+}

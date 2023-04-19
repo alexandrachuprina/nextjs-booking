@@ -1,0 +1,11 @@
+.component {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image {
+  position: relative;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+}

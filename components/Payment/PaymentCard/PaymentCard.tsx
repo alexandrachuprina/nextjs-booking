@@ -1,11 +1,8 @@
 import React from "react";
-import Link from "next/link";
 
 import styles from "../../../styles/components/BookingCard.module.scss";
-import button from "../../../styles/buttons/BookingButton.module.scss";
-import input from "../../../styles/inputs/CouponInput.module.scss";
 
-function BookingCard() {
+function PaymentCard() {
   return (
     <div className={styles.component}>
       <div className={styles.price}>
@@ -27,11 +24,6 @@ function BookingCard() {
           <p>- 1 +</p>
         </div>
       </div>
-      <Link href={"/booking/payment"}>
-        <button className={button.booking_card}>
-          <p>Book</p>
-        </button>
-      </Link>
       <div className={styles.services_list}>
         <ul>
           <li>
@@ -57,14 +49,8 @@ function BookingCard() {
         <h2>Total</h2>
         <h2>7.000kr</h2>
       </div>
-      <div className={styles.coupon_code}>
-        <input type="text" className={input.component} />
-        <button className={button.coupon}>
-          <p>Apply</p>
-        </button>
-      </div>
     </div>
   );
 }
 
-export default BookingCard;
+export default PaymentCard;

@@ -16,6 +16,9 @@
   @media (min-width: $sm) {
     height: 700px;
   }
+  @media (min-width: $xl) {
+    margin-bottom: 150px;
+  }
 }
 .wrapper {
   height: 100%;
