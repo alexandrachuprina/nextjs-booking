@@ -1,9 +1,14 @@
 @import '../../colors.scss';
+@import '../../queries.scss';
 
 .component {
   margin: 10px 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $sm) {
+    margin: 0 0 10px 0;
+  }
 }
 .panel {
   padding: 10px;

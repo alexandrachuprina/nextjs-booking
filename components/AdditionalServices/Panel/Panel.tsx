@@ -26,7 +26,8 @@ function Panel(props: service) {
             className={input.component}
             type="checkbox"
             checked={props.isChecked}
-            onClick={() => props.handleCheckPanel(props.id)}
+            // onClick={() => props.handleCheckPanel(props.id)}
+            onChange={() => props.handleCheckPanel(props.id)}
           />
           <div className={styles.header}>
             <h2>{props.header}</h2>

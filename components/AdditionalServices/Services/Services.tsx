@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import Panel from "../Panel";
-import { Services } from "@/assets/listofServices";
-import { listOfServices } from "@/assets/listofServices";
+import { Services } from "../../../assets/listOfServices";
+import { listOfServices } from "../../../assets/listOfServices";
 import styles from "../../../styles/components/AdditionalServices/Services.module.scss";
 
 

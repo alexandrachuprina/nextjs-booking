@@ -10,7 +10,7 @@ interface children {
 function BookingWrapper(props: children) {
   return (
     <Row justify={"center"}>
-      <Col xs={22}>
+      <Col xs={22} sm={23}>
         <div className={styles.component}>{props.children}</div>
       </Col>
     </Row>

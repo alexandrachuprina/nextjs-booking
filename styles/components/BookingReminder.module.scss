@@ -1,3 +1,4 @@
+@import '../queries.scss';
 
 .component {
   margin: 0 0 60px 0;
@@ -12,6 +13,12 @@
   ul {
     all: unset;
     list-style: none;
+  }
+
+  @media (min-width: $sm) {
+    p {
+      font-size: 12px;
+    }
   }
 }
 .line {
