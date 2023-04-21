@@ -26,7 +26,7 @@
     column-gap: 10%;
     grid-template-rows: repeat(2, 100px);
   }
-  @media (min-width: $lg) {
+  @media (min-width: $xl) {
     height: 477px;
     padding-top: 40px;
     grid-template-columns: 45% 45%;

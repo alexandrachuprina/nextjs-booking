@@ -6,9 +6,8 @@ import check from '../../../styles/checkbox/PanelCheckbox.module.scss';
 import icon from '../../../assets/icons/collapseArow.svg';
 
 type handleCollapseFunction = (a: number) => void;
-// type handleCheckFunction = (a: number) => void;
+type handleCheckFunction = (a: number) => void;
 
-type handleCheckFunction = Function
 
 interface service {
   id: number;

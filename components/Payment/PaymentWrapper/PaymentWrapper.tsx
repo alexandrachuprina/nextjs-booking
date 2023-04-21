@@ -11,7 +11,7 @@ interface Props {
 function PaymentWrapper(props: Props) {
   return (
     <Row justify={'center'}>
-      <Col xs={22} sm={22}>
+      <Col xs={22} sm={22} lg={20} xl={20}>
         <div className={styles.component}>
           {props.children}
         </div>
