@@ -1,10 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
 import styles from "../../../styles/components/AdditionalServices/Panel.module.scss";
-import input from "../../../styles/inputs/PanelInput.module.scss";
+import check from '../../../styles/checkbox/PanelCheckbox.module.scss';
+import icon from '../../../assets/icons/collapseArow.svg';
 
 type handleCollapseFunction = (a: number) => void;
-type handleCheckFunction = (a: number) => void;
+// type handleCheckFunction = (a: number) => void;
+
+type handleCheckFunction = Function
 
 interface service {
   id: number;
@@ -22,13 +26,12 @@ function Panel(props: service) {
     <div className={styles.component}>
       <div className={styles.panel}>
         <div className={styles.panel_info}>
-          <input
-            className={input.component}
-            type="checkbox"
-            checked={props.isChecked}
-            // onClick={() => props.handleCheckPanel(props.id)}
-            onChange={() => props.handleCheckPanel(props.id)}
-          />
+          <div className={check.checkbox_wrapper_18}>
+            <div className={check.round}>
+              <input type="checkbox" id="checkbox_18" onChange={() => props.handleCheckPanel(props.id)}/>
+              <label htmlFor={"checkbox_18"}></label>
+            </div>
+          </div>
           <div className={styles.header}>
             <h2>{props.header}</h2>
             <div className={styles.price}>
@@ -38,12 +41,10 @@ function Panel(props: service) {
           </div>
         </div>
 
-        <p
-          className={styles.collapse_btn}
-          onClick={() => props.handleCollapsePanel(props.id)}
-        >
-          Collapse me
-        </p>
+        <div className={styles.image} onClick={() => props.handleCollapsePanel(props.id)}>
+          <Image src={icon} alt={'arrow'} fill={true}/>
+        </div>
+
       </div>
       {props.isCollapsed ? (
         <div className={styles.collapse}>
