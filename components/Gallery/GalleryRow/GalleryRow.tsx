@@ -11,7 +11,7 @@ interface Props {
 function GalleryRow(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20} lg={22} xl={23}>
+      <Col xs={22} sm={20} lg={22} xl={23} xxl={23}>
         <div className={styles.component}>
           {props.links.map((elem: any, i: number) => (
             <div className={styles.image} key={i}>
