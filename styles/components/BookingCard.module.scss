@@ -31,6 +31,18 @@
   p {
     font-size: 10px;
   }
+
+  @media (min-width: $sm) {
+    p {
+      font-size: 12px;
+    }
+  }
+  @media (min-width: $xl) {
+    p {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
 }
 .check_in,
 .check_out,
@@ -52,14 +64,26 @@
 
       p {
         font-size: 10px;
+        @media (min-width: $sm) {
+          font-size: 12px;
+      }
+        @media (min-width: $xl) {
+          font-size: 16px;
+      }
       }
     }
   }
   .discount {
     p {
       color: green;
-
+      @media (min-width: $sm) {
+        font-size: 12px;
+    }
+      @media (min-width: $xl) {
+        font-size: 16px;
+    }
   }
+
 }
 }
 .line {
