@@ -10,8 +10,12 @@ interface children {
 function BookingWrapper(props: children) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={23} lg={20} xl={20}>
-        <div className={styles.component}>{props.children}</div>
+      <Col span={24} flex={'1600px'}>
+        <Row justify={"center"}>
+          <Col xs={22} sm={23} lg={20} xl={20}>
+            <div className={styles.component}>{props.children}</div>
+          </Col>
+        </Row>
       </Col>
     </Row>
   );

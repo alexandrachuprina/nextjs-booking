@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $sm) {
+    width: 300px;
+  }
+  @media (min-width: $lg) {
+    width: 400px;
+  }
   @media (min-width: $xl) {
     width: 660px;
   }
@@ -22,9 +28,10 @@
 .textarea {
   all: unset;
 
+  box-sizing: border-box;
   border: 1px solid grey;
   padding: 10px 0 0 10px;
-  // width: 100%;
+  width: 100%;
   height: 290px;
 
   margin-top: $margin-top-xs;

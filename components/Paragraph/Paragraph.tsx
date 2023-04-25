@@ -22,21 +22,25 @@ function Paragraph(props: Props) {
           {props.reverse ? (
             <>
               {props.image ? (
-                <Col xs={24} sm={12} flex={"1600px"}>
+                <Col xs={24} sm={12} xl={12} flex={"800px"}>
                   <div className={styles.photo}>
                     <Image src={props.image} alt={props.header} fill={true} />
                   </div>
                 </Col>
               ) : null}
-              <Col xs={24} sm={12}>
-                <div className={styles.component}>
-                  <div className={styles.text}>
-                    <h1>{props.longHeader}</h1>
-                    <h2>{props.header}</h2>
-                    <p>{props.description}</p>
-                    <p>{props.link}</p>
-                  </div>
-                </div>
+              <Col xs={24} sm={12} xl={12} flex={"800px"}>
+                <Row justify={"center"}>
+                  <Col xs={24} sm={16}>
+                    <div className={styles.component}>
+                      <div className={styles.text}>
+                        <h1>{props.longHeader}</h1>
+                        <h2>{props.header}</h2>
+                        <p>{props.description}</p>
+                        <p>{props.link}</p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
               </Col>
             </>
           ) : (

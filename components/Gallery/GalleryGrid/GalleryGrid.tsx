@@ -15,22 +15,28 @@ interface Props {
 function GalleryGrid(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20} lg={17} xl={24}> 
-        <div className={styles.component}>
-          <div className={styles.image01} style={{gridArea: 'img1'}}>
-            <Image src={props.image01} alt={`image`} fill={true}/>
-          </div>
-          <div className={styles.image02} style={{gridArea: 'img2'}}>
-            <Image src={props.image02} alt={`image`} fill={true}/>
-          </div>
-          <div className={styles.image03} style={{gridArea: 'img3'}}>
-            <Image src={props.image03} alt={`image`} fill={true}/>
-          </div>
-            <p className={styles.image04} style={{gridArea: 'text'}}>{props.text}</p>
-          <div className={styles.image05} style={{gridArea: 'img5'}}>
-            <Image src={props.image05} alt={`image`} fill={true}/>
-          </div>
-        </div>
+      <Col span={24} flex={'1600px'}>
+        <Row justify={"center"}>
+          <Col xs={22} sm={20} lg={17} xl={24}>
+            <div className={styles.component}>
+              <div className={styles.image01} style={{ gridArea: "img1" }}>
+                <Image src={props.image01} alt={`image`} fill={true} />
+              </div>
+              <div className={styles.image02} style={{ gridArea: "img2" }}>
+                <Image src={props.image02} alt={`image`} fill={true} />
+              </div>
+              <div className={styles.image03} style={{ gridArea: "img3" }}>
+                <Image src={props.image03} alt={`image`} fill={true} />
+              </div>
+              <p className={styles.image04} style={{ gridArea: "text" }}>
+                {props.text}
+              </p>
+              <div className={styles.image05} style={{ gridArea: "img5" }}>
+                <Image src={props.image05} alt={`image`} fill={true} />
+              </div>
+            </div>
+          </Col>
+        </Row>
       </Col>
     </Row>
   );

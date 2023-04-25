@@ -20,16 +20,20 @@ function Answers(props: Props) {
 
   return (
     <Row justify={"center"}>
-      <Col xs={22} sm={20} lg={17}>
-        <div className={styles.component}>
-          <Collapse onChange={onChange} expandIconPosition={"end"}>
-            {props.content.map((elem: any, i: number) => (
-              <Panel header={elem.question} key={i}>
-                <p>{elem.answer}</p>
-              </Panel>
-            ))}
-          </Collapse>
-        </div>
+      <Col span={24} flex={"1600px"}>
+        <Row justify={"center"}>
+          <Col xs={22} sm={20} lg={17}>
+            <div className={styles.component}>
+              <Collapse onChange={onChange} expandIconPosition={"end"}>
+                {props.content.map((elem: any, i: number) => (
+                  <Panel header={elem.question} key={i}>
+                    <p>{elem.answer}</p>
+                  </Panel>
+                ))}
+              </Collapse>
+            </div>
+          </Col>
+        </Row>
       </Col>
     </Row>
   );
