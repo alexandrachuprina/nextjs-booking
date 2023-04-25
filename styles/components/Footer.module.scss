@@ -2,8 +2,11 @@
 @import "../colors.scss";
 @import "../margins.scss";
 
-
+.background {
+  background-color: $green;
+}
 .footer {
+  padding-top: 20px;
   h2,
   p {
     color: white;

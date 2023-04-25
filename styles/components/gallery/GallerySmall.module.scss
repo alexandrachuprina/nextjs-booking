@@ -12,19 +12,19 @@
 }
 .image {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 100vw;
+  height: 50vh;
 
   @media (min-width: $sm) {
-    width: 384px;
-    height: 384px;
+    width: 50vw;
+    height: 50vw;
   }
-  @media (min-width: $lg) {
-    width: 512px;
-    height: 512px;
-  }
-  @media (min-width: $lg) {
-    width: 770px;
-    height: 670px;
+  // @media (min-width: $lg) {
+  //   width: 512px;
+  //   height: 512px;
+  // }
+  @media (min-width: $xxl) {
+    width: 800px;
+    height: 600px;
   }
 }

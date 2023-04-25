@@ -9,6 +9,7 @@ import main02 from "/assets/images/main02.png";
 import main03 from "/assets/images/main03.png";
 import main04 from "/assets/images/main04.png";
 import GalleryRow from "../Gallery/GalleryRow";
+import Margin from "../Margin";
 
 
 function Main() {
@@ -26,6 +27,7 @@ function Main() {
         reverse={false}
         image={main01}
       />
+      <Margin/>
       <GalleryRow links={[main02, main03, main04]} />
     </>
   );

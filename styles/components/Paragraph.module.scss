@@ -8,13 +8,12 @@
   margin-top: $margin-top-xs;
 
   @media (min-width: $sm) {
-    flex-direction: row;
-    justify-content: space-between;
+    // flex-direction: row;
+    // justify-content: space-between;
   }
 
   @media (min-width: $xl) {
-    margin: 0 0 150px 0;
-    height: 438px;
+    // height: 438px;
   }
 }
 .text {
@@ -26,13 +25,12 @@
   }
 
   @media (min-width: $sm) {
-    width: 290px;
+    width: 320px;
     justify-content: center;
   }
 
   @media (min-width: $xl) {
     width: 465px;   
-    margin: 150px 0;
     h1 {
       font-weight: 300;
       font-size: 30px;
@@ -57,13 +55,16 @@
 }
 .photo {
   position: relative;
-  width: 290px;
-  height: 290px;
+  width: 100vw;
+  height: 70vw;
   margin-bottom: $margin-top-xs;
 
-
-  @media (min-width: $xl) {
-    width: 600px;
-    height: 438px;
+  @media (min-width: $sm) {
+    width: 50vw;
+    height: 35vw;
+  }
+  @media (min-width: $xxl) {
+    width: 800px;
+    height: 600px;
   }
 }

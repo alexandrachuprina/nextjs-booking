@@ -38,7 +38,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: $margin-top-xs 0;
+  height: 10vh;
+
+  @media (min-width: $xl) {
+    height: 120px;
+  }
 }
 .nav {
   display: flex;

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { Row, Col } from "antd";
 import styles from "../../styles/components/Header.module.scss";
@@ -7,40 +8,43 @@ import header from "../../assets/images/header.png";
 
 function Header() {
   return (
-    <div className={styles.component}>
-      <Image
-        src={header}
-        alt="header"
-        quality="100"
-        fill={true}
-        priority
-        style={{
-          objectFit: "cover",
-          objectPosition: "60%",
-        }}
-      />
+    <Row justify={"center"}>
+      <div className={styles.component}>
+        <Image
+          src={header}
+          alt="header"
+          quality="100"
+          fill={true}
+          priority
+          style={{
+            objectFit: "cover",
+            objectPosition: "60%",
+          }}
+        />
 
-      <Row justify={"center"} style={{ height: "70vh" }}>
-        <Col xs={22} sm={20} lg={17}>
-          <div className={styles.header}>
-            <p>Find peace in the Forest</p>
-            <div className={styles.subheader}>
-              <p>
-                Come and stay in out hut hotel near Mariager Fjord in Denmark
-              </p>
+        <Row justify={"center"} style={{ height: "70vh" }}>
+          <Col xs={22} sm={20} lg={17} xl={23} flex={"1600px"}>
+            <div className={styles.header}>
+              <p>Find peace in the Forest</p>
+              <div className={styles.subheader}>
+                <p>
+                  Come and stay in out hut hotel near Mariager Fjord in Denmark
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.button}>
-            <button className={button.component}>
-              <p>Book now</p>
-            </button>
-          </div>
-        </Col>
-      </Row>
-    </div>
+            <div className={styles.button}>
+              <Link href={"/booking/booking"}>
+                <button className={button.component}>
+                  <p>Book now</p>
+                </button>
+              </Link>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    </Row>
   );
 }
 
 export default Header;
-

@@ -11,14 +11,24 @@ interface Props {
 function GallerySmall(props: Props) {
   return (
     <Row justify={"center"}>
-      <Col span={24}>
-        <div className={styles.component}>
+      <Col span={24} flex={"1600px"}>
+        <Row>
           {props.links.map((elem: any, i: number) => (
-            <div className={styles.image} key={i}>
-              <Image src={elem} alt={`${i}`} fill={true} />
-            </div>
+            <Col xs={24} sm={12}>
+              <div className={styles.image} key={i}>
+                <Image
+                  src={elem}
+                  alt={`${i}`}
+                  fill={true}
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "30%",
+                  }}
+                />
+              </div>
+            </Col>
           ))}
-        </div>
+        </Row>
       </Col>
     </Row>
   );

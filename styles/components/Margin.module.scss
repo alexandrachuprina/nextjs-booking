@@ -1,0 +1,15 @@
+@import '../queries.scss';
+
+.component {
+  height: 30px;
+
+  @media (min-width: $sm) {
+    height: 60px;
+  }
+  @media (min-width: $lg) {
+    height: 80px;
+  }
+  @media (min-width: $xl) {
+    height: 150px;
+  }
+}
