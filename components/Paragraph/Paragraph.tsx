@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
@@ -53,7 +54,9 @@ function Paragraph(props: Props) {
                         <h1>{props.longHeader}</h1>
                         <h2>{props.header}</h2>
                         <p>{props.description}</p>
-                        <p className={styles.link}> {props.link}</p>
+                        <Link href={"/faq"}>
+                          <p className={styles.link}> {props.link}</p>
+                        </Link>
                       </div>
                     </div>
                   </Col>

@@ -6,7 +6,6 @@
   background-color: $green;
 }
 .footer {
-  padding-top: 20px;
   h2,
   p {
     color: white;
@@ -45,6 +44,7 @@
   }
 
   @media (min-width: $xl) {
+    margin-top: 50px;
     h2 {
       margin-bottom: 40px;
     }
@@ -74,6 +74,7 @@
     flex-direction: column;
   }
   @media (min-width: $xl) {
+    margin-top: 50px;
     flex-direction: row;
     p {
       margin: 0 30px 60px 0;

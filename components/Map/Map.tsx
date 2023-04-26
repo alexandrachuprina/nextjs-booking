@@ -1,4 +1,5 @@
-import React, { useMemo } from "react";
+import React from "react";
+import Link from "next/link";
 import { Row, Col } from "antd";
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 
@@ -63,7 +64,9 @@ function Map(props: Props) {
                             trees that go through the entire cottage from floor
                             to ceiling.
                           </p>
-                          <p className={paragraph.link}>Read more</p>
+                          <Link href={'/faq'}>
+                            <p className={paragraph.link}>Read more</p>
+                          </Link>
                         </div>
                       </div>
                     </Col>

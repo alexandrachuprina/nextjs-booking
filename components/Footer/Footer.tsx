@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import styles from "../../styles/components/Footer.module.scss";
@@ -19,7 +20,7 @@ function Footer() {
               <div className={styles.footer}>
                 <div className={styles.newsletter}>
                   <h2>Newsletter</h2>
-                  <input className={input.component} type="text" />
+                  <input className={input.component} type="text" placeholder="Email Adress"/>
                   <p>
                     Sign up to our newsletter for special things and receive 10%
                     off your next order.
@@ -28,9 +29,15 @@ function Footer() {
 
                 <div className={styles.text}>
                   <div className={styles.list}>
-                    <p>TERMS AND CONDITIONS</p>
-                    <p>CENCELLATION POLICY</p>
-                    <p>PRIVACY POLICY</p>
+                    <Link href={"/faq"}>
+                      <p>TERMS AND CONDITIONS</p>
+                    </Link>
+                    <Link href={"/faq"}>
+                      <p>CENCELLATION POLICY</p>
+                    </Link>
+                    <Link href={"/faq"}>
+                      <p>PRIVACY POLICY</p>
+                    </Link>
                   </div>
 
                   <div className={styles.logos}>

@@ -5,6 +5,7 @@ import { Row, Col } from "antd";
 import styles from "../../styles/components/Header.module.scss";
 import button from "../../styles/buttons/BookingButton.module.scss";
 import header from "../../assets/images/header.png";
+import BookingButton from "../BookingButton";
 
 function Header() {
   return (
@@ -35,9 +36,11 @@ function Header() {
 
             <div className={styles.button}>
               <Link href={"/booking/booking"}>
-                <button className={button.component}>
-                  <p>Book now</p>
-                </button>
+                <BookingButton
+                text="Book now"
+                price={3200}
+                date="25.04.23"
+                />
               </Link>
             </div>
           </Col>
