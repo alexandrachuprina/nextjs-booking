@@ -36,3 +36,9 @@
 
   margin-top: $margin-top-xs;
 }
+.submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
