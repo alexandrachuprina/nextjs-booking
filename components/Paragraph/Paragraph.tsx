@@ -18,13 +18,8 @@ interface Props {
 function Paragraph(props: Props) {
   return (
     <Row justify={"center"}>
-<<<<<<< HEAD
-      <Col xs={22} sm={20} lg={17} xl={20} xxl={16}>
-        <div className={styles.component}>
-=======
       <Col span={24} flex={"1600px"}>
         <Row>
->>>>>>> develop
           {props.reverse ? (
             <>
               {props.image ? (

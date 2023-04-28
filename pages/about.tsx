@@ -2,7 +2,7 @@ import React from "react";
 import HeaderImage from "@/components/HeaderImage/HeaderImage";
 import Quote from "@/components/Quote";
 import Paragraph from "@/components/Paragraph/Paragraph";
-import GalleryGrid from "@/components/GalleryGrid";
+import GalleryGrid from "@/components/Gallery/GalleryGrid";
 
 import about01 from "../assets/images/about01.png";
 import about02 from "../assets/images/about02.png";

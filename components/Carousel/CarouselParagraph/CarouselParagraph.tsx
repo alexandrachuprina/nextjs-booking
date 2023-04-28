@@ -9,11 +9,7 @@ interface children {
 function CarouselParagraph(props: children) {
   return (
     <Row justify={'center'}>
-<<<<<<< HEAD
-      <Col xs={22} sm={20} lg={17} xl={20} xxl={14}>
-=======
       <Col xs={22} sm={20} lg={17} xl={20} flex={'1350px'}>
->>>>>>> develop
       <div className={styles.component}>
         {props.children}
       </div>

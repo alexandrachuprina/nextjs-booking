@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { Row, Col } from "antd";
-import styles from "../../styles/components/Gallery/GalleryGrid.module.scss";
+import styles from "../../../styles/components/Gallery/GalleryGrid.module.scss";
 
 interface Props {
   image01: StaticImageData;

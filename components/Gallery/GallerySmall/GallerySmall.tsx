@@ -22,8 +22,8 @@ function GallerySmall(props: Props) {
         </div>
         <Row>
           {props.links.map((elem: any, i: number) => (
-            <Col xs={24} sm={12}>
-              <div className={styles.image} key={i}>
+            <Col xs={24} sm={12} key={i}>
+              <div className={styles.image}>
                 <Image
                   src={elem}
                   alt={`${i}`}
