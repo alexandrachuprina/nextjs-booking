@@ -3,7 +3,7 @@
 @import "../margins.scss";
 
 .component {
-  height: 70vh;
+  height: 90vh;
   width: 100vw;
   position: relative;
 
@@ -13,11 +13,9 @@
     color: white;
   }
 
-  @media (min-width: $sm) {
-    height: 700px;
-  }
   @media (min-width: $xl) {
-    margin-bottom: 150px;
+    width: 1600px;
+    height: 800px;
   }
 }
 .wrapper {
@@ -44,7 +42,7 @@
     margin: 50px 0 0 0;
   }
   @media (min-width: $xl) {
-    margin: 95px 0 0 300px;
+    margin: 95px 0 0 600px;
 
     p {
       width: 743px;
@@ -81,11 +79,12 @@
   display: inline-block;
 
   @media (min-width: $xl) {
-    margin-left: 300px;
+    margin-left: 600px;
   }
 }
 .bt-header {
   appearance: none;
   background-color: $green;
 }
+
 

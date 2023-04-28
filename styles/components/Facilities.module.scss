@@ -1,8 +1,10 @@
 @import "../colors.scss";
 @import '../queries.scss';
 
-.component {
+.background {
   background-color: $green;
+}
+.component {
   p {
     color: white;
   }

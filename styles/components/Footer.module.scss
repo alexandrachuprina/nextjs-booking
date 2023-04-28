@@ -2,7 +2,9 @@
 @import "../colors.scss";
 @import "../margins.scss";
 
-
+.background {
+  background-color: $green;
+}
 .footer {
   h2,
   p {
@@ -42,6 +44,7 @@
   }
 
   @media (min-width: $xl) {
+    margin-top: 50px;
     h2 {
       margin-bottom: 40px;
     }
@@ -71,6 +74,7 @@
     flex-direction: column;
   }
   @media (min-width: $xl) {
+    margin-top: 50px;
     flex-direction: row;
     p {
       margin: 0 30px 60px 0;

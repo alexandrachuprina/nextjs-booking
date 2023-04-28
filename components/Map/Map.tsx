@@ -1,8 +1,9 @@
-import React, { useMemo } from "react";
+import React from "react";
+import Link from "next/link";
 import { Row, Col } from "antd";
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 
-import Paragraph from "../Paragraph/Paragraph";
+import paragraph from "../../styles/components/Paragraph.module.scss";
 import styles from "/styles/components/Map.module.scss";
 
 interface Props {
@@ -20,39 +21,63 @@ function Map(props: Props) {
   }
 
   return (
-    <div className={styles.component}>
+    <>
       {props.fullScreen ? (
-        <GoogleMap
-          zoom={14}
-          center={{ lat: 56.0905754, lng: 10.212895 }}
-          options={{ disableDefaultUI: true }}
-          mapContainerClassName={styles.mapfullscreen}
-        />
-      ) : (
-        <>
-          <GoogleMap
-            zoom={14}
-            center={{ lat: 56.0905754, lng: 10.212895 }}
-            options={{ disableDefaultUI: true }}
-            mapContainerClassName={styles.map}
-          />
-
-          <div className={styles.paragraph}>
-            <Paragraph
-              header="The Forest"
-              description="Løvtags three exclusive and comfortable cabins, Et, Ro 
-              and Ly, are designed by architect Sigurd Larsen. They all have an open 
-              space with a double bed, a double sofa bed, kitchen, separate toilet and 
-              an outdoor shower. On the roof, surrounded by treetops, there is a terrace, 
-              which is about nine meters above ground. The cottages are built around tall, 
-              old trees that go through the entire cottage from floor to ceiling."
-              link="Read more"
-              reverse={false}
+        <Row justify={"center"}>
+          <Col span={24} flex={"1600px"}>
+            <GoogleMap
+              zoom={14}
+              center={{ lat: 56.0905754, lng: 10.212895 }}
+              options={{ disableDefaultUI: true }}
+              mapContainerClassName={styles.mapfullscreen}
             />
-          </div>
-        </>
+          </Col>
+        </Row>
+      ) : (
+        <Row justify={"center"}>
+          <Col span={24} flex={"1600px"}>
+            <div className={styles.component}>
+              <Row>
+                <Col xs={24} sm={12}>
+                  <GoogleMap
+                    zoom={14}
+                    center={{ lat: 56.0905754, lng: 10.212895 }}
+                    options={{ disableDefaultUI: true }}
+                    mapContainerClassName={styles.map}
+                  />
+                </Col>
+
+                <Col xs={24} sm={12}>
+                  <Row justify={"center"}>
+                    <Col xs={22} sm={16} lg={14}>
+                      <div className={paragraph.component}>
+                        <div className={paragraph.text}>
+                          <h2>The Forest</h2>
+                          <p>
+                            Løvtags three exclusive and comfortable cabins, Et,
+                            Ro and Ly, are designed by architect Sigurd Larsen.
+                            They all have an open space with a double bed, a
+                            double sofa bed, kitchen, separate toilet and an
+                            outdoor shower. On the roof, surrounded by treetops,
+                            there is a terrace, which is about nine meters above
+                            ground. The cottages are built around tall, old
+                            trees that go through the entire cottage from floor
+                            to ceiling.
+                          </p>
+                          <Link href={'/faq'}>
+                            <p className={paragraph.link}>Read more</p>
+                          </Link>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
       )}
-    </div>
+    </>
   );
 }
 

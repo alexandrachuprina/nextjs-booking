@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Row, Col } from "antd";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
@@ -10,44 +11,72 @@ interface Props {
   description: string;
   link?: string;
   image?: StaticImageData;
+  halfScreen?: boolean;
   reverse: boolean;
 }
 
 function Paragraph(props: Props) {
   return (
     <Row justify={"center"}>
+<<<<<<< HEAD
       <Col xs={22} sm={20} lg={17} xl={20} xxl={16}>
         <div className={styles.component}>
+=======
+      <Col span={24} flex={"1600px"}>
+        <Row>
+>>>>>>> develop
           {props.reverse ? (
             <>
               {props.image ? (
-                <div className={styles.photo}>
-                  <Image src={props.image} alt={props.header} fill={true} />
-                </div>
+                <Col xs={24} sm={12} xl={12} flex={"800px"}>
+                  <div className={styles.photo}>
+                    <Image src={props.image} alt={props.header} fill={true} />
+                  </div>
+                </Col>
               ) : null}
-              <div className={styles.text}>
-              <h1>{props.longHeader}</h1>
-                <h2>{props.header}</h2>
-                <p>{props.description}</p>
-                <p>{props.link}</p>
-              </div>
+              <Col xs={24} sm={12} xl={12} flex={"800px"}>
+                <Row justify={"center"}>
+                  <Col xs={24} sm={16}>
+                    <div className={styles.component}>
+                      <div className={styles.text}>
+                        <h1>{props.longHeader}</h1>
+                        <h2>{props.header}</h2>
+                        <p>{props.description}</p>
+                        <p>{props.link}</p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
             </>
           ) : (
             <>
-              <div className={styles.text}>
-                <h1>{props.longHeader}</h1>
-                <h2>{props.header}</h2>
-                <p>{props.description}</p>
-                <p className={styles.link}> {props.link}</p>
-              </div>
+              <Col xs={24} sm={12} xl={12} flex={"800px"}>
+                <Row justify={"center"}>
+                  <Col xs={22} sm={16}>
+                    <div className={styles.component}>
+                      <div className={styles.text}>
+                        <h1>{props.longHeader}</h1>
+                        <h2>{props.header}</h2>
+                        <p>{props.description}</p>
+                        <Link href={"/faq"}>
+                          <p className={styles.link}> {props.link}</p>
+                        </Link>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
               {props.image ? (
-                <div className={styles.photo}>
-                  <Image src={props.image} alt={props.header} fill={true} />
-                </div>
+                <Col xs={24} sm={12} xl={12} flex={"800px"}>
+                  <div className={styles.photo}>
+                    <Image src={props.image} alt={props.header} fill={true} />
+                  </div>
+                </Col>
               ) : null}
             </>
           )}
-        </div>
+        </Row>
       </Col>
     </Row>
   );

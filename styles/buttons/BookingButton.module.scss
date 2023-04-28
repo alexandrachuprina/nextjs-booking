@@ -1,6 +1,87 @@
 @import "../colors.scss";
 @import '../queries.scss';
 
+.header_button {
+  display: flex;
+  flex-direction: row;
+}
+.header_button_book_now {
+  all: unset;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: $green;
+  p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  @media (min-width: $xs) {
+    width: 160px;
+    height: 60px;
+  }
+  @media (min-width: $xl) {
+    width: 266px;
+    height: 100px;
+  }
+}
+.header_button_price {
+  background-color: $lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $xs) {
+    width: 80px;
+    height: 60px;
+
+    .text {
+      p {
+        color: black;
+        font-size: 10px;
+        line-height: 14px;
+      }
+      .price {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  @media (min-width: $xl) {
+    width: 120px;
+    height: 100px;
+
+    .text {
+      p {
+        color: black;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .price {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// TODO Rename styles
+
 .component {
   all: unset;
   cursor: pointer;

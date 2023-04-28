@@ -1,10 +1,10 @@
 @import "../../margins.scss";
 @import '../../queries.scss';
+@import '../../colors.scss';
 
 .component {
   display: flex;
   flex-direction: column;
-  margin-bottom: $margin-top-xs;
 
   @media (min-width: $sm) {
     flex-direction: row;
@@ -12,19 +12,74 @@
 }
 .image {
   position: relative;
-  width: 320px;
-  height: 320px;
+  width: 100vw;
+  height: 50vh;
 
   @media (min-width: $sm) {
-    width: 384px;
-    height: 384px;
+    width: 50vw;
+    height: 50vw;
+  }
+  @media (min-width: $xxl) {
+    width: 800px;
+    height: 600px;
+  }
+}
+.round_button_parent {
+  position: relative;
+}
+.round_button_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  background-color: $lightgreen;
+  cursor: pointer;
+
+  p {
+    color: black;
+  }
+
+  @media (min-width: $xs) {
+    opacity: 0;
+  }
+  @media (min-width: $sm) {
+    opacity: 1;
+    top: 20vh;
+    left: 43.5vw;
+    height: 100px;
+    width: 100px;
+
+    p {
+      font-size: 12px;
+    }
   }
   @media (min-width: $lg) {
-    width: 512px;
-    height: 512px;
+    opacity: 1;
+    top: 30vh;
+    left: 44.5vw;
+    height: 120px;
+    width: 120px;
+
+    p {
+      font-size: 12px;
+    }
   }
-  @media (min-width: $lg) {
-    width: 770px;
-    height: 670px;
+  @media (min-width: $xl) {
+    opacity: 1;
+    top: 35vh;
+    left: 45vw;
+    height: 157px;
+    width: 157px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: $xxl) {
+    opacity: 0;
   }
 }

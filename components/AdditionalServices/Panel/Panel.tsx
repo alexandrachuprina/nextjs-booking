@@ -27,8 +27,8 @@ function Panel(props: service) {
         <div className={styles.panel_info}>
           <div className={check.checkbox_wrapper_18}>
             <div className={check.round}>
-              <input type="checkbox" id="checkbox_18" onChange={() => props.handleCheckPanel(props.id)}/>
-              <label htmlFor={"checkbox_18"}></label>
+              <input type="checkbox" id={`${props.id}`} onChange={() => props.handleCheckPanel(props.id)}/>
+              <label htmlFor={`${props.id}`}></label>
             </div>
           </div>
           <div className={styles.header}>

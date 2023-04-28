@@ -11,6 +11,7 @@ import logo from "/assets/icons/logo.svg";
 import denmark from "/assets/icons/denmark.svg";
 
 function Navbar() {
+  // const [windowSize, setWindowSize] = useState<any>();
   const [phone, setPhone] = useState<any>();
   const [open, setOpen] = useState<any>(false);
 
@@ -80,7 +81,7 @@ function Navbar() {
       ) : (
         <>
           <Row justify={"center"}>
-            <Col span={22}>
+            <Col xs={22} xl={20} xxl={18} flex={"1400px"}>
               <div className={styles.component}>
                 <div className={styles.logo}>
                   <Image src={logo} alt="logo" fill={true} />
@@ -110,9 +111,11 @@ function Navbar() {
                   </div>
                 </div>
 
-                <button className={booknow.component}>
-                  <p>book now</p>
-                </button>
+                <Link href={"/booking/booking"}>
+                  <button className={booknow.component}>
+                    <p>book now</p>
+                  </button>
+                </Link>
               </div>
             </Col>
           </Row>
@@ -123,4 +126,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

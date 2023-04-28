@@ -8,11 +8,13 @@
 
   @media (min-width: $sm) {
     width: 290px;
+    // padding-bottom: 10px;
   }
   @media (min-width: $xl) {
     width: 429px;
     justify-content: center;
     margin: 0;
+    padding-bottom: 30px;
     h2 {
       font-weight: 400;
       font-size: 40px;

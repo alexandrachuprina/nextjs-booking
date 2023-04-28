@@ -22,6 +22,7 @@ function Services() {
     const checkedPanel: any = newInfo.find((elem) => elem.id === id);
     checkedPanel.isChecked = !checkedPanel.isChecked;
     setData({data: newInfo})
+    // console.log(data) 
   }
 
   return (
