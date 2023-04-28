@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Row, Col } from "antd";
 import { StaticImageData } from "next/image";
-// import styles from "/styles/components/Gallery/GallerySmall.module.scss";
+import styles from "/styles/components/GallerySmall.module.scss";
 
 interface Props {
   links: StaticImageData[];
@@ -13,17 +13,17 @@ function GallerySmall(props: Props) {
   return (
     <Row justify={"center"}>
       <Col span={24} flex={"1600px"}>
-        {/* <div className={styles.round_button_parent}> */}
-          {/* <div className={styles.round_button_child }> */}
+        <div className={styles.round_button_parent}>
+          <div className={styles.round_button_child }>
             <Link href={"/about"}>
               <p>More about us</p>
             </Link>
-          {/* </div> */}
-        {/* </div> */}
+          </div>
+        </div>
         <Row>
           {props.links.map((elem: any, i: number) => (
             <Col xs={24} sm={12} key={i}>
-              {/* <div className={styles.image}> */}
+              <div className={styles.image}>
                 <Image
                   src={elem}
                   alt={`${i}`}
@@ -33,7 +33,7 @@ function GallerySmall(props: Props) {
                     objectPosition: "30%",
                   }}
                 />
-              {/* </div> */}
+              </div>
             </Col>
           ))}
         </Row>
