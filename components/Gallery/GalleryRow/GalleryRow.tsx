@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
 import Image from "next/image";
-import styles from "../../styles/components/GalleryRow.module.scss";
+import styles from "/styles/components/GalleryRow.module.scss";
 import { StaticImageData } from "next/image";
 
 interface Props {
