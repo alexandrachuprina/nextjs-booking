@@ -38,7 +38,7 @@ function Carousel(props: Props) {
 
         <div className={styles.component}>
           <div className={styles.image}>
-            <Image src={props.data[index].image} alt="image" fill={true} />
+            <Image src={props.data[index].image} alt="image" fill={true} style={{objectFit: 'cover'}}/>
           </div>
           <div className={styles.navigation}>
 

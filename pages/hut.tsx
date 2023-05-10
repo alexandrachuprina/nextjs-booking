@@ -8,6 +8,7 @@ import hut01 from "../assets/images/hut01.png";
 import hut02 from "../assets/images/hut02.png";
 import hut03 from "../assets/images/hut03.png";
 import hut04 from "../assets/images/hut04.png";
+import Margin from "@/components/Margin";
 
 function hut() {
   return (
@@ -17,6 +18,7 @@ function hut() {
         // @ts-ignore
         image={hut01}
       />
+      <Margin/>
       <CarouselParagraph>
         <Carousel
           data={[{ image: hut02 }, { image: hut03 }, { image: hut04 }]}

@@ -17,6 +17,7 @@ import CarouselParagraph from "@/components/Carousel/CarouselParagraph";
 import Paragraph from "@/components/Paragraph";
 import Map from "@/components/Map";
 import HeaderContacts from "@/components/Contacts/HeaderContacts";
+import Margin from "@/components/Margin";
 
 function area() {
   return (
@@ -30,6 +31,7 @@ function area() {
         icon={location}
         button={["get directions"]}
       />
+      <Margin/>
       <CarouselParagraph>
         <Carousel
           data={[{ image: area02 }, { image: area03 }, { image: area04 }]}

@@ -1,6 +1,7 @@
 @import "../queries.scss";
 @import "../colors.scss";
 @import "../margins.scss";
+@import '../links.scss';
 
 // PHONE
 .componentphone {
@@ -30,6 +31,9 @@
   position: relative;
   width: 20px;
   height: 20px;
+}
+.link {
+  @include link;
 }
 
 // DESKTOP
@@ -62,4 +66,7 @@
       margin-right: 30px;
     }
   }
+}
+.link {
+  @include link;
 }

@@ -3,19 +3,15 @@
 
 .component {
   position: relative;
-  min-width: 320px;
+  width: 100vw;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  @media (min-width: $sm) {
-    margin-bottom: $margin-top-xs;
-  }
   @media (min-width: $xl) {
     height: 350px;
-    margin-bottom: 150px;
   }
 }
 .header {

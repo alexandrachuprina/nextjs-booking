@@ -8,7 +8,6 @@
 
   @media (min-width: $sm) {
     width: 290px;
-    // padding-bottom: 10px;
   }
   @media (min-width: $xl) {
     width: 429px;
@@ -32,6 +31,7 @@
   display: flex;
   flex-direction: row;
   margin: $margin-bottom-h2-xs 0;
+  cursor: pointer;
   p {
     margin-right: $margin-bottom-h2-xs;
   }

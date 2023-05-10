@@ -1,0 +1,18 @@
+.component {
+	width: 100px;
+	height: 50px;
+	transform: skew(-20deg);
+	background: #555;
+  margin-left: 200px;
+
+  p {
+    transform: skew(20deg);
+  }
+}
+
+.parallelogram {
+	width: 100px;
+	height: 50px;
+	transform: skew(20deg);
+	background: #555;
+}

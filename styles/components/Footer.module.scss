@@ -42,7 +42,9 @@
   p {
     margin-top: $margin-bottom-h2-xs;
   }
-
+  @media (min-width: $xs) {
+    margin-top: 50px;
+  }
   @media (min-width: $xl) {
     margin-top: 50px;
     h2 {
@@ -64,6 +66,9 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $xs) {
+    margin-top: 30px;
+  }
   @media (min-width: $sm) {
     flex-direction: row;
     p {

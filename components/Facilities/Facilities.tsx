@@ -18,10 +18,10 @@ import towels from "../../assets/icons/facilities/towels.svg";
 
 function Facilities() {
   return (
+          <div className={styles.background}>
     <Row justify={"center"}>
       <Col span={24} flex={"1600px"}>
-        <div className={styles.background}>
-          <Row justify={"center"}>
+        <Row justify={"center"}>
             <Col xs={24} sm={20} lg={20} xl={18}>
               <div className={styles.component}>
                 <div className={styles.header}>
@@ -131,10 +131,10 @@ function Facilities() {
                 </div>
               </div>
             </Col>
-          </Row>
-        </div>
+        </Row>
       </Col>
     </Row>
+          </div>
   );
 }
 

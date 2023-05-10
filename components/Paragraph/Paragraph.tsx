@@ -25,19 +25,26 @@ function Paragraph(props: Props) {
               {props.image ? (
                 <Col xs={24} sm={12} xl={12} flex={"800px"}>
                   <div className={styles.photo}>
-                    <Image src={props.image} alt={props.header} fill={true} />
+                    <Image
+                      src={props.image}
+                      alt={props.header}
+                      fill={true}
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                 </Col>
               ) : null}
               <Col xs={24} sm={12} xl={12} flex={"800px"}>
                 <Row justify={"center"}>
-                  <Col xs={24} sm={16}>
+                  <Col xs={22} sm={16}>
                     <div className={styles.component}>
                       <div className={styles.text}>
                         <h1>{props.longHeader}</h1>
                         <h2>{props.header}</h2>
                         <p>{props.description}</p>
-                        <p>{props.link}</p>
+                        <Link href={"/faq"} className={styles.link}>
+                          <p>{props.link}</p>
+                        </Link>
                       </div>
                     </div>
                   </Col>
@@ -54,7 +61,7 @@ function Paragraph(props: Props) {
                         <h1>{props.longHeader}</h1>
                         <h2>{props.header}</h2>
                         <p>{props.description}</p>
-                        <Link href={"/faq"}>
+                        <Link href={"/faq"} className={styles.link}>
                           <p className={styles.link}> {props.link}</p>
                         </Link>
                       </div>
@@ -65,7 +72,12 @@ function Paragraph(props: Props) {
               {props.image ? (
                 <Col xs={24} sm={12} xl={12} flex={"800px"}>
                   <div className={styles.photo}>
-                    <Image src={props.image} alt={props.header} fill={true} />
+                    <Image
+                      src={props.image}
+                      alt={props.header}
+                      fill={true}
+                      style={{ objectFit: "cover" }}
+                    />
                   </div>
                 </Col>
               ) : null}

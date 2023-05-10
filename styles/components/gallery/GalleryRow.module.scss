@@ -18,8 +18,8 @@
 }
 .image {
   position: relative;
-  width: 290px;
-  height: 290px;
+  min-height: 290px;
+  min-width: 290px;
   margin-bottom: $margin-top-xs;
 
   @media (min-width: $lg) {

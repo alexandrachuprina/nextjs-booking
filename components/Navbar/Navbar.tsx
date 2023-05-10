@@ -10,10 +10,19 @@ import booknow from "../../styles/buttons/BookingButton.module.scss";
 import logo from "/assets/icons/logo.svg";
 import denmark from "/assets/icons/denmark.svg";
 
+import axios from "axios";
+
+
 function Navbar() {
-  // const [windowSize, setWindowSize] = useState<any>();
   const [phone, setPhone] = useState<any>();
   const [open, setOpen] = useState<any>(false);
+
+  const [data, setData] = useState<any>([]);
+
+  function fetchData() {
+    axios.get('http://localhost:1337/api/layout-navbar?populate=*')
+    .then((res) => setData(res.data.data.attributes))
+  }
 
   useEffect(() => {
     const width = window.innerWidth;
@@ -21,7 +30,9 @@ function Navbar() {
       setPhone(true);
     } else {
       setPhone(false);
-    }
+    };
+
+    // fetchData()
   }, []);
 
   // The Drawer
@@ -53,22 +64,22 @@ function Navbar() {
               width={150}
             >
               <div className={styles.navphone}>
-                <Link href="/">
+                <Link href="/" className={styles.link}>
                   <p>Home</p>
                 </Link>
-                <Link href="/hut">
+                <Link href="/hut" className={styles.link}>
                   <p>the hut</p>
                 </Link>
-                <Link href="/area">
+                <Link href="/area" className={styles.link}>
                   <p>The area</p>
                 </Link>
-                <Link href="/booking/booking">
+                <Link href="/booking/booking" className={styles.link}>
                   <p>booking</p>
                 </Link>
-                <Link href="/about">
+                <Link href="/about" className={styles.link}>
                   <p>about us</p>
                 </Link>
-                <Link href="/faq">
+                <Link href="/faq" className={styles.link}>
                   <p>faq</p>
                 </Link>
               </div>
@@ -88,22 +99,22 @@ function Navbar() {
                 </div>
 
                 <div className={styles.nav}>
-                  <Link href="/">
+                  <Link href="/" className={styles.link}>
                     <p>Home</p>
                   </Link>
-                  <Link href="/hut">
+                  <Link href="/hut" className={styles.link}>
                     <p>the hut</p>
                   </Link>
-                  <Link href="/area">
+                  <Link href="/area" className={styles.link}>
                     <p>The area</p>
                   </Link>
-                  <Link href="/booking/booking">
+                  <Link href="/booking/booking" className={styles.link}>
                     <p>booking</p>
                   </Link>
-                  <Link href="/about">
+                  <Link href="/about" className={styles.link}>
                     <p>about us</p>
                   </Link>
-                  <Link href="/faq">
+                  <Link href="/faq" className={styles.link}>
                     <p>faq</p>
                   </Link>
                   <div className={styles.smalllogonav}>

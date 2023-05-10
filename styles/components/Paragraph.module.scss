@@ -1,20 +1,12 @@
 @import "../queries.scss";
 @import "../colors.scss";
 @import "../margins.scss";
+@import '../links.scss';
 
 .component {
   display: flex;
   flex-direction: column;
   margin-top: $margin-top-xs;
-
-  @media (min-width: $sm) {
-    // flex-direction: row;
-    // justify-content: space-between;
-  }
-
-  @media (min-width: $xl) {
-    // height: 438px;
-  }
 }
 .text {
   display: flex;
@@ -51,12 +43,13 @@
   }
 }
 .link {
+  @include link;
   text-decoration: underline;
 }
 .photo {
   position: relative;
   width: 100vw;
-  height: 70vw;
+  height: 80vw;
   margin-bottom: $margin-top-xs;
 
   @media (min-width: $sm) {

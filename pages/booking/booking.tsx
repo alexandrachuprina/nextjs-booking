@@ -9,6 +9,7 @@ import BookingCard from "@/components/Booknig/BookingCard";
 import Services from "@/components/AdditionalServices/Services";
 import RemindersWrapper from "@/components/Booknig/RemindersWrapper";
 import ReadFaqButton from "@/components/Booknig/ReadFaqButton";
+import Margin from "@/components/Margin";
 
 function booking() {
   return (
@@ -19,6 +20,7 @@ function booking() {
         text="Vesterborg, Denmark"
         icon={icon}
       />
+      <Margin/>
       <BookingWrapper>
         <Services />
         <BookingCard />

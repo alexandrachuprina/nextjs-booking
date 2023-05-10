@@ -16,6 +16,9 @@ import ContactsForm from "@/components/Contacts/ContactsForm";
 import ContactsLogo from "@/components/Contacts/ContactsLogo";
 import ContactsWrapper from "@/components/Contacts/ContactsWrapper";
 
+import axios from "axios";
+import Margin from "@/components/Margin";
+
 function about() {
   return (
     <>
@@ -24,6 +27,7 @@ function about() {
         image={about01}
         button={["contact us", "read faq"]}
       />
+      <Margin/>
       <Paragraph
         header=""
         longHeader="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -56,3 +60,4 @@ function about() {
 }
 
 export default about;
+

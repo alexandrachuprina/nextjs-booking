@@ -22,7 +22,7 @@ function GallerySmall(props: Props) {
         </div>
         <Row>
           {props.links.map((elem: any, i: number) => (
-            <Col xs={24} sm={12}>
+            <Col xs={24} sm={12} key={i}>
               <div className={styles.image} key={i}>
                 <Image
                   src={elem}
@@ -32,6 +32,7 @@ function GallerySmall(props: Props) {
                     objectFit: "cover",
                     objectPosition: "30%",
                   }}
+                  key={i}
                 />
               </div>
             </Col>

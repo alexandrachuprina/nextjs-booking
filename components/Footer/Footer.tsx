@@ -12,9 +12,9 @@ import bank from "../../assets/icons/social/bank.svg";
 
 function Footer() {
   return (
+        <div className={styles.background}>
     <Row justify={"center"} style={{ marginTop: "auto" }}>
       <Col span={24} flex={"1600px"}>
-        <div className={styles.background}>
           <Row justify={"center"}>
             <Col xs={22} sm={20} lg={17} xl={20}>
               <div className={styles.footer}>
@@ -62,10 +62,11 @@ function Footer() {
               </div>
             </Col>
           </Row>
-        </div>
       </Col>
     </Row>
+        </div>
   );
 }
 
 export default Footer;
+
